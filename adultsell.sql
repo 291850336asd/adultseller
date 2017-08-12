@@ -15,6 +15,7 @@ INSERT INTO `banners` (`banner_pic_url`, `banner_change_link`, `banner_type`, `b
 ('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502607645&di=e542664a9cec1739d9c91e9042af20ed&imgtype=jpg&er=1&src=http%3A%2F%2Fimg11.360buyimg.com%2Fcms%2Fjfs%2Ft763%2F206%2F1000961300%2F287611%2Fc2ecae01%2F550fc429Nd80b9b6d.jpg','','','浪的飞起');
 
 
+
 DROP TABLE IF EXISTS `videos`;
 CREATE TABLE IF NOT EXISTS `videos` (
 	`video_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,

@@ -5,14 +5,14 @@ package com.videosplay.main.business.model;
  */
 public class GoodsShop extends GoodsId{
     private int count;
-    private boolean isSelect;
+    private boolean select;
 
     public boolean isSelect() {
-        return isSelect;
+        return select;
     }
 
     public void setSelect(boolean select) {
-        isSelect = select;
+        this.select = select;
     }
 
     public int getCount() {

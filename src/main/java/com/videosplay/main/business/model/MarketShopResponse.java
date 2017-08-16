@@ -9,7 +9,7 @@ import java.util.List;
 public class MarketShopResponse {
 
     private int selectCount;
-    private BigDecimal totalMoney;
+    private BigDecimal totalMoney = new BigDecimal(0);
     private List<SelectMarketGoods> selectMarketGoodses;
 
     public int getSelectCount() {

@@ -46,7 +46,7 @@ public class MarketShopController {
                 List<GoodsShop> goodShops = requestData.getData();
                 for(GoodsShop goodsItem: goodShops){
                     if(goodsItem.getCount() > 0){
-                        ids.append(goodsItem.getCount() + ",");
+                        ids.append(goodsItem.getGoodsId() + ",");
                     }
                 }
                 String queryStr = "select * from goods_info where goods_id in (" + ids.toString().substring(0, ids.length()-1) +  ")";
@@ -57,7 +57,7 @@ public class MarketShopController {
                         GoodsInfo rawGoods = info.stream().filter(item-> (item.getGoodsId() == goodsItem.getGoodsId())).findFirst().get();
                         if(rawGoods != null){
                             SelectMarketGoods selectMarketGoods = new SelectMarketGoods();
-                            if(rawGoods.getGoodNum() >= goodsItem.getCount()){
+                            if(rawGoods.getGoodsNum() >= goodsItem.getCount()){
                                 if(marketShopResponse.getSelectMarketGoodses() == null){
                                     List<SelectMarketGoods> selectGoods = new ArrayList<>();
                                     marketShopResponse.setSelectMarketGoodses(selectGoods);
@@ -66,13 +66,13 @@ public class MarketShopController {
                                 selectMarketGoods.setSelect(goodsItem.isSelect());
                                 selectMarketGoods.setGoodsInfo(rawGoods);
                             }else{
-                                selectMarketGoods.setCount(rawGoods.getGoodNum());
+                                selectMarketGoods.setCount(rawGoods.getGoodsNum());
                                 selectMarketGoods.setSelect(goodsItem.isSelect());
                                 selectMarketGoods.setGoodsInfo(rawGoods);
                             }
                             if(selectMarketGoods.isSelect()){
                                 marketShopResponse.setSelectCount(marketShopResponse.getSelectCount() + selectMarketGoods.getCount());
-                                marketShopResponse.setTotalMoney(marketShopResponse.getTotalMoney().add( selectMarketGoods.getGoodsInfo().getGoodsShopPrice().multiply(new BigDecimal(selectMarketGoods.getCount()))));
+                                marketShopResponse.setTotalMoney(marketShopResponse.getTotalMoney().add(selectMarketGoods.getGoodsInfo().getGoodsShopPrice().multiply(new BigDecimal(selectMarketGoods.getCount()))));
                             }
                             marketShopResponse.getSelectMarketGoodses().add(selectMarketGoods);
                         }

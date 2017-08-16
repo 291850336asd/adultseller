@@ -10,7 +10,7 @@ public class GoodsInfo extends GoodsId{
     private int goodsType;
     private BigDecimal goodsShopPrice;
     private BigDecimal goodsMarketPrice;
-    private int goodNum;
+    private int goodsNum;
     private int goodsSellCount;
     private String goodsDesc;
     private String goodsImg;
@@ -41,12 +41,12 @@ public class GoodsInfo extends GoodsId{
         this.goodsMarketPrice = goodsMarketPrice;
     }
 
-    public int getGoodNum() {
-        return goodNum;
+    public int getGoodsNum() {
+        return goodsNum;
     }
 
-    public void setGoodNum(int goodNum) {
-        this.goodNum = goodNum;
+    public void setGoodsNum(int goodNum) {
+        this.goodsNum = goodNum;
     }
 
     public int getGoodsSellCount() {

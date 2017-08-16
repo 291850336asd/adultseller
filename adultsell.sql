@@ -15,7 +15,6 @@ INSERT INTO `banners` (`banner_pic_url`, `banner_change_link`, `banner_type`, `b
 ('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502607645&di=e542664a9cec1739d9c91e9042af20ed&imgtype=jpg&er=1&src=http%3A%2F%2Fimg11.360buyimg.com%2Fcms%2Fjfs%2Ft763%2F206%2F1000961300%2F287611%2Fc2ecae01%2F550fc429Nd80b9b6d.jpg','','','浪的飞起');
 
 
-
 DROP TABLE IF EXISTS `videos`;
 CREATE TABLE IF NOT EXISTS `videos` (
 	`video_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
@@ -32,18 +31,18 @@ CREATE TABLE IF NOT EXISTS `videos` (
 	PRIMARY KEY (`video_id`)
 ) DEFAULT CHARSET=utf8;
 INSERT INTO `videos` (`video_title`, `video_img`, `video_mp4_url`, `video_description`) VALUES
-('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://v3.365yg.com/e073970f732f0466de243bc415f7ba6b/598ac811/video/m/220aaa47d9a65e94c9d88a2f249029d6d4e1147cce0000112fa561c69b/','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
-('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://v3.365yg.com/e073970f732f0466de243bc415f7ba6b/598ac811/video/m/220aaa47d9a65e94c9d88a2f249029d6d4e1147cce0000112fa561c69b/','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
-('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://v3.365yg.com/e073970f732f0466de243bc415f7ba6b/598ac811/video/m/220aaa47d9a65e94c9d88a2f249029d6d4e1147cce0000112fa561c69b/','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
-('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://v3.365yg.com/e073970f732f0466de243bc415f7ba6b/598ac811/video/m/220aaa47d9a65e94c9d88a2f249029d6d4e1147cce0000112fa561c69b/','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
-('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://v3.365yg.com/e073970f732f0466de243bc415f7ba6b/598ac811/video/m/220aaa47d9a65e94c9d88a2f249029d6d4e1147cce0000112fa561c69b/','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
-('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://v3.365yg.com/e073970f732f0466de243bc415f7ba6b/598ac811/video/m/220aaa47d9a65e94c9d88a2f249029d6d4e1147cce0000112fa561c69b/','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
-('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://v3.365yg.com/e073970f732f0466de243bc415f7ba6b/598ac811/video/m/220aaa47d9a65e94c9d88a2f249029d6d4e1147cce0000112fa561c69b/','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
-('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://v3.365yg.com/e073970f732f0466de243bc415f7ba6b/598ac811/video/m/220aaa47d9a65e94c9d88a2f249029d6d4e1147cce0000112fa561c69b/','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
-('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://v3.365yg.com/e073970f732f0466de243bc415f7ba6b/598ac811/video/m/220aaa47d9a65e94c9d88a2f249029d6d4e1147cce0000112fa561c69b/','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
-('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://v3.365yg.com/e073970f732f0466de243bc415f7ba6b/598ac811/video/m/220aaa47d9a65e94c9d88a2f249029d6d4e1147cce0000112fa561c69b/','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
-('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://v3.365yg.com/e073970f732f0466de243bc415f7ba6b/598ac811/video/m/220aaa47d9a65e94c9d88a2f249029d6d4e1147cce0000112fa561c69b/','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
-('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://v3.365yg.com/e073970f732f0466de243bc415f7ba6b/598ac811/video/m/220aaa47d9a65e94c9d88a2f249029d6d4e1147cce0000112fa561c69b/','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀');
+('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://flv2.bn.netease.com/videolib3/1611/24/BCcfR1400/HD/BCcfR1400-mobile.mp4','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
+('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://flv2.bn.netease.com/videolib3/1611/24/BCcfR1400/HD/BCcfR1400-mobile.mp4','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
+('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://flv2.bn.netease.com/videolib3/1611/24/BCcfR1400/HD/BCcfR1400-mobile.mp4','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
+('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://flv2.bn.netease.com/videolib3/1611/24/BCcfR1400/HD/BCcfR1400-mobile.mp4','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
+('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://flv2.bn.netease.com/videolib3/1611/24/BCcfR1400/HD/BCcfR1400-mobile.mp4','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
+('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://flv2.bn.netease.com/videolib3/1611/24/BCcfR1400/HD/BCcfR1400-mobile.mp4','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
+('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://flv2.bn.netease.com/videolib3/1611/24/BCcfR1400/HD/BCcfR1400-mobile.mp4','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
+('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://flv2.bn.netease.com/videolib3/1611/24/BCcfR1400/HD/BCcfR1400-mobile.mp4','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
+('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://flv2.bn.netease.com/videolib3/1611/24/BCcfR1400/HD/BCcfR1400-mobile.mp4','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
+('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://flv2.bn.netease.com/videolib3/1611/24/BCcfR1400/HD/BCcfR1400-mobile.mp4','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
+('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://flv2.bn.netease.com/videolib3/1611/24/BCcfR1400/HD/BCcfR1400-mobile.mp4','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
+('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://flv2.bn.netease.com/videolib3/1611/24/BCcfR1400/HD/BCcfR1400-mobile.mp4','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀');
 
 
 DROP TABLE IF EXISTS `user`;
@@ -140,6 +139,7 @@ INSERT INTO `goods_sort` (`sort_name`, `sort_type`, `sort_parent_type`, `sort_en
 DROP TABLE if EXISTS `goods_info`;
 CREATE TABLE IF NOT EXISTS `goods_info` (
 	`goods_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+	`goods_code` VARCHAR(255) NOT NULL DEFAULT 'xxxxoooo',
 	`goods_name` varchar(255) NOT NULL DEFAULT '',
 	`goods_type` varchar(255) NOT NULL DEFAULT '',
 	`goods_shop_price` decimal(10,2) unsigned NOT NULL DEFAULT '0.00',
@@ -148,19 +148,21 @@ CREATE TABLE IF NOT EXISTS `goods_info` (
 	`goods_sell_count` smallint(5) unsigned NOT NULL DEFAULT '0',
 	`is_promote` tinyint(1) unsigned NOT NULL DEFAULT '0',
 	`promote_price` decimal(10,2) unsigned NOT NULL DEFAULT '0.00',
-  	`promote_start_date` int(11) unsigned NOT NULL DEFAULT '0',
-  	`promote_end_date` int(11) unsigned NOT NULL DEFAULT '0',
-  	`promote_gift` varchar(255),
-  	`keywords` varchar(255) NOT NULL DEFAULT '',
-  	`goods_desc` text NOT NULL,
-  	`goods_desc_url` varchar(255),
-  	`goods_thumb` varchar(255) NOT NULL DEFAULT '',
-  	`goods_img` varchar(255) NOT NULL DEFAULT '',
-  	`goods_text_img_detail` varchar(500) NOT NULL DEFAULT '',
-  	`is_on_sale` tinyint(1) unsigned NOT NULL DEFAULT '1',
-  	`goods_add_time` int(10) unsigned NOT NULL DEFAULT '0',
-  	`is_shipping` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  	`shipping_code` varchar(255),
+	`promote_start_date` int(11) unsigned NOT NULL DEFAULT '0',
+	`promote_end_date` int(11) unsigned NOT NULL DEFAULT '0',
+	`promote_gift` varchar(255),
+	`keywords` varchar(255) NOT NULL DEFAULT '',
+	`goods_desc` text NOT NULL,
+	`goods_desc_url` varchar(255),
+	`goods_thumb` varchar(255) NOT NULL DEFAULT '',
+	`goods_img` varchar(255) NOT NULL DEFAULT '',
+	`goods_text_img_detail` varchar(500) NOT NULL DEFAULT 'http://wap.chunshuitang.com/goods/4351.html',
+	`goods_video_show` varchar(500) NOT NULL DEFAULT '',
+	`goods_real_test` VARCHAR(500) NOT NULL DEFAULT '',
+	`is_on_sale` tinyint(1) unsigned NOT NULL DEFAULT '1',
+	`goods_add_time` int(10) unsigned NOT NULL DEFAULT '0',
+	`is_shipping` tinyint(1) unsigned NOT NULL DEFAULT '0',
+	`shipping_code` varchar(255),
 	PRIMARY KEY (`goods_id`)
 ) DEFAULT CHARSET=utf8;
 INSERT INTO `goods_info` (`goods_name`, `goods_type`, `goods_shop_price`, `goods_market_price`, `goods_num`, `goods_sell_count`, `goods_desc`, `goods_img`)VALUES 

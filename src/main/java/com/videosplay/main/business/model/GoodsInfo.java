@@ -5,8 +5,7 @@ import java.math.BigDecimal;
 /**
  * Created by sunmeng on 17/8/5.
  */
-public class GoodsInfo {
-    private int goodsId;
+public class GoodsInfo extends GoodsId{
     private String goodsName;
     private int goodsType;
     private BigDecimal goodsShopPrice;
@@ -16,6 +15,15 @@ public class GoodsInfo {
     private String goodsDesc;
     private String goodsImg;
     private String promoteGift;
+    private String goodsCode;
+
+    public String getGoodsCode() {
+        return goodsCode;
+    }
+
+    public void setGoodsCode(String goodsCode) {
+        this.goodsCode = goodsCode;
+    }
 
     public String getPromoteGift() {
         return promoteGift;
@@ -23,14 +31,6 @@ public class GoodsInfo {
 
     public void setPromoteGift(String promoteGift) {
         this.promoteGift = promoteGift;
-    }
-
-    public int getGoodsId() {
-        return goodsId;
-    }
-
-    public void setGoodsId(int goodsId) {
-        this.goodsId = goodsId;
     }
 
     public BigDecimal getGoodsMarketPrice() {

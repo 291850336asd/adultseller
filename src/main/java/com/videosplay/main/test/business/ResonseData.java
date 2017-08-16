@@ -5,7 +5,7 @@ package com.videosplay.main.test.business;
  */
 public class ResonseData<T> {
 
-    private int code;
+    private int code = 404;
     private String message;
     private T data;
 
@@ -30,6 +30,7 @@ public class ResonseData<T> {
     }
 
     public void setData(T data) {
+        this.code = 200;
         this.data = data;
     }
 

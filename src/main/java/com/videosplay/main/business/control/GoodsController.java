@@ -3,6 +3,8 @@ package com.videosplay.main.business.control;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.videosplay.main.business.model.GoodsInfo;
+import com.videosplay.main.business.model.GoodsPrice;
+import com.videosplay.main.business.utils.LogUtils;
 import com.videosplay.main.business.utils.StringUtils;
 import com.videosplay.main.test.business.RequestData;
 import com.videosplay.main.test.business.RequestPageData;
@@ -46,7 +48,6 @@ public class GoodsController {
             if(requestData != null){
                 queryStr.append(StringUtils.getPageSizeQuery(requestData.getData().getPage(), requestData.getData().getPageSize()));
             }
-
             List<GoodsInfo> info = jdbcTemplate.query(queryStr.toString(), personMapper);
             resonseData.setData(info);
             resonseData.setCode(200);
@@ -69,8 +70,12 @@ public class GoodsController {
             RequestData<GoodsInfo> requestData = (RequestData<GoodsInfo>)objectMapper.readValue(request, new TypeReference<RequestData<GoodsInfo>>(){});
             RowMapper<GoodsInfo> personMapper = new BeanPropertyRowMapper<GoodsInfo>(GoodsInfo.class);
             String queryStr = "select * from goods_info where goods_id = " + requestData.getData().getGoodsId();
+            LogUtils.warn(queryStr);
             GoodsInfo info = jdbcTemplate.queryForObject(queryStr, personMapper);
-            resonseData.setData(info);
+            String queryPrice = "select * from goods_price where goods_id=" + requestData.getData().getGoodsId();
+            RowMapper<GoodsPrice> priceMapper = new BeanPropertyRowMapper<GoodsPrice>(GoodsPrice.class);
+            List<GoodsPrice> prices = jdbcTemplate.query(queryPrice, priceMapper);
+            info.setPricesList(prices);
             resonseData.setData(info);
             resonseData.setCode(200);
             resonseData.setMessage("success");

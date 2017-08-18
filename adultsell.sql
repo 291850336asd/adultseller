@@ -190,8 +190,45 @@ INSERT INTO `goods_info` (`goods_name`, `goods_type`, `goods_shop_price`, `goods
 ('测试商品22', '100', 100.30, 189.99, 30, 12, '全球有超过300万女性正在使用NEREIDS,打造惹火身材', 'http://img73.nipic.com/file/20160422/22830428_212520255235_1.jpg');
 
 
-
-
+DROP TABLE IF EXISTS `goods_price`;
+CREATE TABLE IF NOT EXISTS `goods_price` (
+	`goods_price_id` MEDIUMINT(8) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`goods_id` MEDIUMINT(8) UNSIGNED NOT NULL,
+	`goods_color_style_model` VARCHAR(255) NOT NULL,
+	`goods_price` decimal(10,2) unsigned NOT NULL DEFAULT '0.00',
+	PRIMARY KEY (`goods_price_id`)
+) DEFAULT CHARSET=utf8;
+INSERT INTO `goods_price` (`goods_id`, `goods_color_style_model`, `goods_price`) VALUES
+(1, "红色蕾丝边 中号", 100.30),
+(1, "黑色蕾丝边 小号", 100.30),
+(1, "红色金边边 中号", 100.30),
+(2, "黑色半透明边 中号", 100.30),
+(3, "红色蕾丝边 中号", 100.30),
+(3, "黑色蕾丝边 小号", 100.30),
+(3, "红色金边边 中号", 100.30),
+(4, "黑色半透明边 中号", 100.30),
+(4, "红色蕾丝边 中号", 100.30),
+(5, "黑色蕾丝边 小号", 100.30),
+(5, "红色金边边 中号", 100.30),
+(6, "黑色半透明边 中号", 100.30),
+(7, "红色蕾丝边 中号", 100.30),
+(7, "黑色蕾丝边 小号", 100.30),
+(8, "红色金边边 中号", 100.30),
+(8, "黑色半透明边 中号", 100.30),
+(9, "红色蕾丝边 中号", 100.30),
+(10, "黑色蕾丝边 小号", 100.30),
+(11, "红色金边边 中号", 100.30),
+(12, "黑色半透明边 中号", 100.30),
+(13, "红色蕾丝边 中号", 100.30),
+(14, "黑色蕾丝边 小号", 100.30),
+(15, "红色金边边 中号", 100.30),
+(16, "黑色半透明边 中号", 100.30),
+(17, "红色蕾丝边 中号", 100.30),
+(18, "黑色蕾丝边 小号", 100.30),
+(19, "红色金边边 中号", 100.30),
+(20, "黑色半透明边 中号", 100.30),
+(21, "红色蕾丝边 中号", 100.30),
+(22, "黑色蕾丝边 小号", 100.30)
 
 
 

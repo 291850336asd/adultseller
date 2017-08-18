@@ -1,6 +1,7 @@
 package com.videosplay.main.business.model;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * Created by sunmeng on 17/8/5.
@@ -16,6 +17,16 @@ public class GoodsInfo extends GoodsId{
     private String goodsImg;
     private String promoteGift;
     private String goodsCode;
+
+    private List<GoodsPrice> pricesList;
+
+    public List<GoodsPrice> getPricesList() {
+        return pricesList;
+    }
+
+    public void setPricesList(List<GoodsPrice> pricesList) {
+        this.pricesList = pricesList;
+    }
 
     public String getGoodsCode() {
         return goodsCode;

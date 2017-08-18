@@ -1,7 +1,3 @@
-2017-08-18 10:30:08.120 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -2222222222
-2017-08-18 10:30:09.716 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -2222222222
-2017-08-18 10:36:42.530 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
-2017-08-18 10:38:33.643 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
-2017-08-18 10:43:19.972 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -2222222222
-2017-08-18 10:43:37.306 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -2222222222
-2017-08-18 10:44:21.865 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -2222222222
+2017-08-18 11:25:07.569 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-18 11:28:07.906 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 2
+2017-08-18 11:28:07.906 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 2

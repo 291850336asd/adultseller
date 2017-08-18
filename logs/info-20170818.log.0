@@ -1,500 +1,62 @@
-2017-08-18 10:28:28.373 [main] INFO  com.videosplay.main.Application -Starting Application on sunmengdeMacBook-Pro.local with PID 7831 (/Users/sunmeng/Desktop/springmvc/gs-rest-service/complete/build/classes/main started by sunmeng in /Users/sunmeng/Desktop/springmvc/gs-rest-service/complete)
-2017-08-18 10:28:28.377 [main] INFO  com.videosplay.main.Application -No active profile set, falling back to default profiles: default
-2017-08-18 10:28:28.468 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Fri Aug 18 10:28:28 CST 2017]; root of context hierarchy
-2017-08-18 10:28:30.169 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
-2017-08-18 10:28:30.183 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
-2017-08-18 10:28:30.184 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
-2017-08-18 10:28:30.278 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
-2017-08-18 10:28:30.279 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1811 ms
-2017-08-18 10:28:30.425 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
-2017-08-18 10:28:30.427 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'statViewServlet' to [/druid/*]
-2017-08-18 10:28:30.429 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-08-18 10:28:30.430 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-08-18 10:28:30.430 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-08-18 10:28:30.430 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
-2017-08-18 10:28:30.431 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'webStatFilter' to urls: [/*]
-2017-08-18 10:28:31.000 [main] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
-2017-08-18 10:28:31.273 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Building JPA container EntityManagerFactory for persistence unit 'default'
-2017-08-18 10:28:31.288 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [
+2017-08-18 11:24:59.047 [main] INFO  com.videosplay.main.Application -Starting Application on sunmengdeMacBook-Pro.local with PID 1516 (/Users/sunmeng/Desktop/springmvc/gs-rest-service/complete/build/classes/main started by sunmeng in /Users/sunmeng/Desktop/springmvc/gs-rest-service/complete)
+2017-08-18 11:24:59.050 [main] INFO  com.videosplay.main.Application -No active profile set, falling back to default profiles: default
+2017-08-18 11:24:59.111 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Fri Aug 18 11:24:59 CST 2017]; root of context hierarchy
+2017-08-18 11:25:00.606 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2017-08-18 11:25:00.622 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2017-08-18 11:25:00.623 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-08-18 11:25:00.720 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-08-18 11:25:00.721 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1610 ms
+2017-08-18 11:25:00.885 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-18 11:25:00.886 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-08-18 11:25:00.890 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-18 11:25:00.890 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-18 11:25:00.891 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-18 11:25:00.891 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-18 11:25:00.891 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'webStatFilter' to urls: [/*]
+2017-08-18 11:25:01.409 [main] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+2017-08-18 11:25:01.676 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-08-18 11:25:01.690 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2017-08-18 10:28:31.464 [main] INFO  org.hibernate.Version -HHH000412: Hibernate Core {5.0.12.Final}
-2017-08-18 10:28:31.465 [main] INFO  org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
-2017-08-18 10:28:31.466 [main] INFO  org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
-2017-08-18 10:28:31.503 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2017-08-18 10:28:31.606 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2017-08-18 10:28:31.972 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2017-08-18 10:28:32.387 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Fri Aug 18 10:28:28 CST 2017]; root of context hierarchy
-2017-08-18 10:28:32.450 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/greeting]}" onto public com.videosplay.main.Greeting com.videosplay.main.GreetingController.greeting(java.lang.String)
-2017-08-18 10:28:32.451 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/getallinfos]}" onto public com.videosplay.main.InfosData com.videosplay.main.GreetingController.getInfos()
-2017-08-18 10:28:32.454 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfos],methods=[POST]}" onto public java.util.List<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.GoodsController.getGoodsInfos()
-2017-08-18 10:28:32.455 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfosPage],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsInfo>> com.videosplay.main.business.control.GoodsController.getGoodsInfosByPage(java.lang.String)
-2017-08-18 10:28:32.455 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsDetailInfo],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.GoodsController.getGoodsDetailInfo(java.lang.String)
-2017-08-18 10:28:32.456 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodssort],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsSortList>> com.videosplay.main.business.control.GoodsSortController.getGoodsSortInfos()
-2017-08-18 10:28:32.456 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/mainlist],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.MainResponse> com.videosplay.main.business.control.MainPageController.showMainPage()
-2017-08-18 10:28:32.457 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsMarketShop],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.MarketShopResponse> com.videosplay.main.business.control.MarketShopController.getMarketShopList(java.lang.String)
-2017-08-18 10:28:32.458 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videosinfos],methods=[POST]}" onto public java.util.List<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.VideosController.getvideosInfos()
-2017-08-18 10:28:32.459 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videosinfosPage],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.Video>> com.videosplay.main.business.control.VideosController.getVideosInfosByPage(java.lang.String)
-2017-08-18 10:28:32.459 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videoDetailInfo],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.Video> com.videosplay.main.business.control.VideosController.getVideoDetailInfo(java.lang.String)
-2017-08-18 10:28:32.459 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videoplaycount],methods=[POST]}" onto public void com.videosplay.main.business.control.VideosController.updateVideoPlayCount(java.lang.String)
-2017-08-18 10:28:32.463 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/add],methods=[GET]}" onto public java.lang.String com.videosplay.main.test.business.CustomerController.addNewUser(java.lang.String,java.lang.String,int)
-2017-08-18 10:28:32.464 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/all],methods=[GET]}" onto public com.videosplay.main.test.business.ResonseData com.videosplay.main.test.business.CustomerController.getAllUsers()
-2017-08-18 10:28:32.464 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update],methods=[POST],consumes=[application/json]}" onto public boolean com.videosplay.main.test.business.CustomerController.updateCustomer(int)
-2017-08-18 10:28:32.465 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update11],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.test.business.UserTest> com.videosplay.main.test.business.CustomerController.updateCustomerByJson(java.lang.String)
-2017-08-18 10:28:32.467 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update22],methods=[POST]}" onto public boolean com.videosplay.main.test.business.CustomerController.updateCustomerByJsonFormData(int,java.lang.String,java.lang.String)
-2017-08-18 10:28:32.468 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-08-18 10:28:32.469 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-08-18 10:28:32.497 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-08-18 10:28:32.498 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-08-18 10:28:32.536 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-08-18 10:28:32.768 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
-2017-08-18 10:28:32.771 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'statFilter' has been autodetected for JMX exposure
-2017-08-18 10:28:32.772 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
-2017-08-18 10:28:32.778 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
-2017-08-18 10:28:32.780 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
-2017-08-18 10:28:32.825 [main] ERROR o.a.coyote.http11.Http11NioProtocol -Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
-java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method)
-	at sun.nio.ch.Net.bind(Net.java:437)
-	at sun.nio.ch.Net.bind(Net.java:429)
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
-	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
-	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
-	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
-	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
-	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
-	at com.videosplay.main.Application.main(Application.java:10)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
-2017-08-18 10:28:32.827 [main] ERROR o.a.catalina.core.StandardService -Failed to start connector [Connector[HTTP/1.1-8080]]
-org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
-	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
-	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
-	at com.videosplay.main.Application.main(Application.java:10)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
-Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1000)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
-	... 18 common frames omitted
-Caused by: java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method)
-	at sun.nio.ch.Net.bind(Net.java:437)
-	at sun.nio.ch.Net.bind(Net.java:429)
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
-	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
-	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
-	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
-	... 19 common frames omitted
-2017-08-18 10:28:32.836 [main] INFO  o.a.catalina.core.StandardService -Stopping service Tomcat
-2017-08-18 10:28:32.847 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer -
-
-Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
-2017-08-18 10:28:32.850 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
-
-Action:
-
-Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
-
-2017-08-18 10:28:32.852 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Fri Aug 18 10:28:28 CST 2017]; root of context hierarchy
-2017-08-18 10:28:32.853 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
-2017-08-18 10:28:32.854 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans
-2017-08-18 10:28:32.855 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
-2017-08-18 10:28:32.859 [main] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} closed
-2017-08-18 10:29:27.623 [main] INFO  com.videosplay.main.Application -Starting Application on sunmengdeMacBook-Pro.local with PID 7960 (/Users/sunmeng/Desktop/springmvc/gs-rest-service/complete/build/classes/main started by sunmeng in /Users/sunmeng/Desktop/springmvc/gs-rest-service/complete)
-2017-08-18 10:29:27.626 [main] INFO  com.videosplay.main.Application -No active profile set, falling back to default profiles: default
-2017-08-18 10:29:27.703 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Fri Aug 18 10:29:27 CST 2017]; root of context hierarchy
-2017-08-18 10:29:29.254 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
-2017-08-18 10:29:29.267 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
-2017-08-18 10:29:29.268 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
-2017-08-18 10:29:29.389 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
-2017-08-18 10:29:29.390 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1687 ms
-2017-08-18 10:29:29.561 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
-2017-08-18 10:29:29.562 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'statViewServlet' to [/druid/*]
-2017-08-18 10:29:29.565 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-08-18 10:29:29.565 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-08-18 10:29:29.566 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-08-18 10:29:29.566 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
-2017-08-18 10:29:29.566 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'webStatFilter' to urls: [/*]
-2017-08-18 10:29:30.122 [main] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
-2017-08-18 10:29:30.380 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Building JPA container EntityManagerFactory for persistence unit 'default'
-2017-08-18 10:29:30.394 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2017-08-18 10:29:30.568 [main] INFO  org.hibernate.Version -HHH000412: Hibernate Core {5.0.12.Final}
-2017-08-18 10:29:30.569 [main] INFO  org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
-2017-08-18 10:29:30.570 [main] INFO  org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
-2017-08-18 10:29:30.606 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2017-08-18 10:29:30.729 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2017-08-18 10:29:31.110 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2017-08-18 10:29:31.537 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Fri Aug 18 10:29:27 CST 2017]; root of context hierarchy
-2017-08-18 10:29:31.595 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/greeting]}" onto public com.videosplay.main.Greeting com.videosplay.main.GreetingController.greeting(java.lang.String)
-2017-08-18 10:29:31.597 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/getallinfos]}" onto public com.videosplay.main.InfosData com.videosplay.main.GreetingController.getInfos()
-2017-08-18 10:29:31.600 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfos],methods=[POST]}" onto public java.util.List<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.GoodsController.getGoodsInfos()
-2017-08-18 10:29:31.600 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfosPage],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsInfo>> com.videosplay.main.business.control.GoodsController.getGoodsInfosByPage(java.lang.String)
-2017-08-18 10:29:31.601 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsDetailInfo],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.GoodsController.getGoodsDetailInfo(java.lang.String)
-2017-08-18 10:29:31.601 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodssort],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsSortList>> com.videosplay.main.business.control.GoodsSortController.getGoodsSortInfos()
-2017-08-18 10:29:31.602 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/mainlist],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.MainResponse> com.videosplay.main.business.control.MainPageController.showMainPage()
-2017-08-18 10:29:31.603 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsMarketShop],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.MarketShopResponse> com.videosplay.main.business.control.MarketShopController.getMarketShopList(java.lang.String)
-2017-08-18 10:29:31.604 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videosinfos],methods=[POST]}" onto public java.util.List<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.VideosController.getvideosInfos()
-2017-08-18 10:29:31.604 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videosinfosPage],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.Video>> com.videosplay.main.business.control.VideosController.getVideosInfosByPage(java.lang.String)
-2017-08-18 10:29:31.605 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videoDetailInfo],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.Video> com.videosplay.main.business.control.VideosController.getVideoDetailInfo(java.lang.String)
-2017-08-18 10:29:31.605 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videoplaycount],methods=[POST]}" onto public void com.videosplay.main.business.control.VideosController.updateVideoPlayCount(java.lang.String)
-2017-08-18 10:29:31.609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/add],methods=[GET]}" onto public java.lang.String com.videosplay.main.test.business.CustomerController.addNewUser(java.lang.String,java.lang.String,int)
-2017-08-18 10:29:31.610 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/all],methods=[GET]}" onto public com.videosplay.main.test.business.ResonseData com.videosplay.main.test.business.CustomerController.getAllUsers()
-2017-08-18 10:29:31.610 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update],methods=[POST],consumes=[application/json]}" onto public boolean com.videosplay.main.test.business.CustomerController.updateCustomer(int)
-2017-08-18 10:29:31.610 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update11],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.test.business.UserTest> com.videosplay.main.test.business.CustomerController.updateCustomerByJson(java.lang.String)
-2017-08-18 10:29:31.612 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update22],methods=[POST]}" onto public boolean com.videosplay.main.test.business.CustomerController.updateCustomerByJsonFormData(int,java.lang.String,java.lang.String)
-2017-08-18 10:29:31.614 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-08-18 10:29:31.615 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-08-18 10:29:31.636 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-08-18 10:29:31.636 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-08-18 10:29:31.664 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-08-18 10:29:31.834 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
-2017-08-18 10:29:31.836 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'statFilter' has been autodetected for JMX exposure
-2017-08-18 10:29:31.836 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
-2017-08-18 10:29:31.840 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
-2017-08-18 10:29:31.840 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
-2017-08-18 10:29:31.876 [main] ERROR o.a.coyote.http11.Http11NioProtocol -Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
-java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method)
-	at sun.nio.ch.Net.bind(Net.java:437)
-	at sun.nio.ch.Net.bind(Net.java:429)
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
-	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
-	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
-	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
-	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
-	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
-	at com.videosplay.main.Application.main(Application.java:10)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
-2017-08-18 10:29:31.878 [main] ERROR o.a.catalina.core.StandardService -Failed to start connector [Connector[HTTP/1.1-8080]]
-org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
-	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
-	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
-	at com.videosplay.main.Application.main(Application.java:10)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
-Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1000)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
-	... 18 common frames omitted
-Caused by: java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method)
-	at sun.nio.ch.Net.bind(Net.java:437)
-	at sun.nio.ch.Net.bind(Net.java:429)
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
-	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
-	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
-	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
-	... 19 common frames omitted
-2017-08-18 10:29:31.885 [main] INFO  o.a.catalina.core.StandardService -Stopping service Tomcat
-2017-08-18 10:29:31.895 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer -
-
-Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
-2017-08-18 10:29:31.900 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
-
-Action:
-
-Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
-
-2017-08-18 10:29:31.901 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Fri Aug 18 10:29:27 CST 2017]; root of context hierarchy
-2017-08-18 10:29:31.902 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
-2017-08-18 10:29:31.902 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans
-2017-08-18 10:29:31.903 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
-2017-08-18 10:29:31.906 [main] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} closed
-2017-08-18 10:30:08.117 [http-nio-8080-exec-7] INFO  com.videosplay.main.Application -333333333333
-2017-08-18 10:30:08.119 [http-nio-8080-exec-7] ERROR com.videosplay.main.Application -à1111111111
-2017-08-18 10:30:08.120 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -2222222222
-2017-08-18 10:30:09.716 [http-nio-8080-exec-2] INFO  com.videosplay.main.Application -333333333333
-2017-08-18 10:30:09.716 [http-nio-8080-exec-2] ERROR com.videosplay.main.Application -à1111111111
-2017-08-18 10:30:09.716 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -2222222222
-2017-08-18 10:33:24.122 [main] INFO  com.videosplay.main.Application -Starting Application on sunmengdeMacBook-Pro.local with PID 8031 (/Users/sunmeng/Desktop/springmvc/gs-rest-service/complete/build/classes/main started by sunmeng in /Users/sunmeng/Desktop/springmvc/gs-rest-service/complete)
-2017-08-18 10:33:24.124 [main] INFO  com.videosplay.main.Application -No active profile set, falling back to default profiles: default
-2017-08-18 10:33:24.176 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f58853c: startup date [Fri Aug 18 10:33:24 CST 2017]; root of context hierarchy
-2017-08-18 10:33:25.760 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
-2017-08-18 10:33:25.781 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
-2017-08-18 10:33:25.782 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
-2017-08-18 10:33:25.920 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
-2017-08-18 10:33:25.920 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1744 ms
-2017-08-18 10:33:26.125 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
-2017-08-18 10:33:26.127 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'statViewServlet' to [/druid/*]
-2017-08-18 10:33:26.131 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-08-18 10:33:26.132 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-08-18 10:33:26.133 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-08-18 10:33:26.133 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
-2017-08-18 10:33:26.133 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'webStatFilter' to urls: [/*]
-2017-08-18 10:33:26.844 [main] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
-2017-08-18 10:33:27.202 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Building JPA container EntityManagerFactory for persistence unit 'default'
-2017-08-18 10:33:27.219 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2017-08-18 10:33:27.404 [main] INFO  org.hibernate.Version -HHH000412: Hibernate Core {5.0.12.Final}
-2017-08-18 10:33:27.406 [main] INFO  org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
-2017-08-18 10:33:27.407 [main] INFO  org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
-2017-08-18 10:33:27.456 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2017-08-18 10:33:27.589 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2017-08-18 10:33:28.052 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2017-08-18 10:33:28.691 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f58853c: startup date [Fri Aug 18 10:33:24 CST 2017]; root of context hierarchy
-2017-08-18 10:33:28.786 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/greeting]}" onto public com.videosplay.main.Greeting com.videosplay.main.GreetingController.greeting(java.lang.String)
-2017-08-18 10:33:28.789 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/getallinfos]}" onto public com.videosplay.main.InfosData com.videosplay.main.GreetingController.getInfos()
-2017-08-18 10:33:28.793 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfos],methods=[POST]}" onto public java.util.List<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.GoodsController.getGoodsInfos()
-2017-08-18 10:33:28.794 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfosPage],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsInfo>> com.videosplay.main.business.control.GoodsController.getGoodsInfosByPage(java.lang.String)
-2017-08-18 10:33:28.794 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsDetailInfo],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.GoodsController.getGoodsDetailInfo(java.lang.String)
-2017-08-18 10:33:28.795 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodssort],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsSortList>> com.videosplay.main.business.control.GoodsSortController.getGoodsSortInfos()
-2017-08-18 10:33:28.796 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/mainlist],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.MainResponse> com.videosplay.main.business.control.MainPageController.showMainPage()
-2017-08-18 10:33:28.797 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsMarketShop],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.MarketShopResponse> com.videosplay.main.business.control.MarketShopController.getMarketShopList(java.lang.String)
-2017-08-18 10:33:28.798 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videosinfosPage],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.Video>> com.videosplay.main.business.control.VideosController.getVideosInfosByPage(java.lang.String)
-2017-08-18 10:33:28.799 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videosinfos],methods=[POST]}" onto public java.util.List<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.VideosController.getvideosInfos()
-2017-08-18 10:33:28.799 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videoDetailInfo],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.Video> com.videosplay.main.business.control.VideosController.getVideoDetailInfo(java.lang.String)
-2017-08-18 10:33:28.799 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videoplaycount],methods=[POST]}" onto public void com.videosplay.main.business.control.VideosController.updateVideoPlayCount(java.lang.String)
-2017-08-18 10:33:28.804 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/add],methods=[GET]}" onto public java.lang.String com.videosplay.main.test.business.CustomerController.addNewUser(java.lang.String,java.lang.String,int)
-2017-08-18 10:33:28.805 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/all],methods=[GET]}" onto public com.videosplay.main.test.business.ResonseData com.videosplay.main.test.business.CustomerController.getAllUsers()
-2017-08-18 10:33:28.805 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update],methods=[POST],consumes=[application/json]}" onto public boolean com.videosplay.main.test.business.CustomerController.updateCustomer(int)
-2017-08-18 10:33:28.805 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update11],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.test.business.UserTest> com.videosplay.main.test.business.CustomerController.updateCustomerByJson(java.lang.String)
-2017-08-18 10:33:28.808 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update22],methods=[POST]}" onto public boolean com.videosplay.main.test.business.CustomerController.updateCustomerByJsonFormData(int,java.lang.String,java.lang.String)
-2017-08-18 10:33:28.811 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-08-18 10:33:28.812 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-08-18 10:33:28.859 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-08-18 10:33:28.859 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-08-18 10:33:28.909 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-08-18 10:33:29.242 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
-2017-08-18 10:33:29.244 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'statFilter' has been autodetected for JMX exposure
-2017-08-18 10:33:29.244 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
-2017-08-18 10:33:29.249 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
-2017-08-18 10:33:29.250 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
-2017-08-18 10:33:29.290 [main] ERROR o.a.coyote.http11.Http11NioProtocol -Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
-java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method)
-	at sun.nio.ch.Net.bind(Net.java:437)
-	at sun.nio.ch.Net.bind(Net.java:429)
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
-	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
-	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
-	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
-	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
-	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
-	at com.videosplay.main.Application.main(Application.java:10)
-2017-08-18 10:33:29.291 [main] ERROR o.a.catalina.core.StandardService -Failed to start connector [Connector[HTTP/1.1-8080]]
-org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
-	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
-	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
-	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
-	at com.videosplay.main.Application.main(Application.java:10)
-Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1000)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
-	... 13 common frames omitted
-Caused by: java.net.BindException: Address already in use
-	at sun.nio.ch.Net.bind0(Native Method)
-	at sun.nio.ch.Net.bind(Net.java:437)
-	at sun.nio.ch.Net.bind(Net.java:429)
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
-	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
-	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:978)
-	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:628)
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
-	... 14 common frames omitted
-2017-08-18 10:33:29.299 [main] INFO  o.a.catalina.core.StandardService -Stopping service Tomcat
-2017-08-18 10:33:29.309 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer -
-
-Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
-2017-08-18 10:33:29.314 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
-
-Action:
-
-Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
-
-2017-08-18 10:33:29.315 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@f58853c: startup date [Fri Aug 18 10:33:24 CST 2017]; root of context hierarchy
-2017-08-18 10:33:29.316 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
-2017-08-18 10:33:29.317 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans
-2017-08-18 10:33:29.317 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
-2017-08-18 10:33:29.322 [main] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} closed
-2017-08-18 10:34:29.428 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Wed Aug 16 15:45:26 CST 2017]; root of context hierarchy
-2017-08-18 10:34:29.432 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
-2017-08-18 10:34:29.432 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans
-2017-08-18 10:34:29.433 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
-2017-08-18 10:34:29.437 [Thread-3] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} closed
-2017-08-18 10:36:22.168 [main] INFO  com.videosplay.main.Application -Starting Application on sunmengdeMacBook-Pro.local with PID 645 (/Users/sunmeng/Desktop/springmvc/gs-rest-service/complete/build/classes/main started by sunmeng in /Users/sunmeng/Desktop/springmvc/gs-rest-service/complete)
-2017-08-18 10:36:22.176 [main] INFO  com.videosplay.main.Application -No active profile set, falling back to default profiles: default
-2017-08-18 10:36:22.253 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Fri Aug 18 10:36:22 CST 2017]; root of context hierarchy
-2017-08-18 10:36:24.006 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
-2017-08-18 10:36:24.020 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
-2017-08-18 10:36:24.021 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
-2017-08-18 10:36:24.124 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
-2017-08-18 10:36:24.125 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1873 ms
-2017-08-18 10:36:24.327 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
-2017-08-18 10:36:24.329 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'statViewServlet' to [/druid/*]
-2017-08-18 10:36:24.332 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
-2017-08-18 10:36:24.333 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2017-08-18 10:36:24.333 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2017-08-18 10:36:24.333 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
-2017-08-18 10:36:24.334 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'webStatFilter' to urls: [/*]
-2017-08-18 10:36:25.186 [main] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
-2017-08-18 10:36:25.547 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Building JPA container EntityManagerFactory for persistence unit 'default'
-2017-08-18 10:36:25.574 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...]
-2017-08-18 10:36:25.860 [main] INFO  org.hibernate.Version -HHH000412: Hibernate Core {5.0.12.Final}
-2017-08-18 10:36:25.862 [main] INFO  org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
-2017-08-18 10:36:25.864 [main] INFO  org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
-2017-08-18 10:36:25.918 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2017-08-18 10:36:26.074 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2017-08-18 10:36:26.559 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
-2017-08-18 10:36:27.197 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Fri Aug 18 10:36:22 CST 2017]; root of context hierarchy
-2017-08-18 10:36:27.274 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/greeting]}" onto public com.videosplay.main.Greeting com.videosplay.main.GreetingController.greeting(java.lang.String)
-2017-08-18 10:36:27.276 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/getallinfos]}" onto public com.videosplay.main.InfosData com.videosplay.main.GreetingController.getInfos()
-2017-08-18 10:36:27.281 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfos],methods=[POST]}" onto public java.util.List<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.GoodsController.getGoodsInfos()
-2017-08-18 10:36:27.281 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfosPage],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsInfo>> com.videosplay.main.business.control.GoodsController.getGoodsInfosByPage(java.lang.String)
-2017-08-18 10:36:27.282 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsDetailInfo],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.GoodsController.getGoodsDetailInfo(java.lang.String)
-2017-08-18 10:36:27.283 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodssort],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsSortList>> com.videosplay.main.business.control.GoodsSortController.getGoodsSortInfos()
-2017-08-18 10:36:27.284 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/mainlist],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.MainResponse> com.videosplay.main.business.control.MainPageController.showMainPage()
-2017-08-18 10:36:27.285 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsMarketShop],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.MarketShopResponse> com.videosplay.main.business.control.MarketShopController.getMarketShopList(java.lang.String)
-2017-08-18 10:36:27.288 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videosinfosPage],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.Video>> com.videosplay.main.business.control.VideosController.getVideosInfosByPage(java.lang.String)
-2017-08-18 10:36:27.289 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videosinfos],methods=[POST]}" onto public java.util.List<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.VideosController.getvideosInfos()
-2017-08-18 10:36:27.290 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videoDetailInfo],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.Video> com.videosplay.main.business.control.VideosController.getVideoDetailInfo(java.lang.String)
-2017-08-18 10:36:27.290 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videoplaycount],methods=[POST]}" onto public void com.videosplay.main.business.control.VideosController.updateVideoPlayCount(java.lang.String)
-2017-08-18 10:36:27.297 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/add],methods=[GET]}" onto public java.lang.String com.videosplay.main.test.business.CustomerController.addNewUser(java.lang.String,java.lang.String,int)
-2017-08-18 10:36:27.298 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/all],methods=[GET]}" onto public com.videosplay.main.test.business.ResonseData com.videosplay.main.test.business.CustomerController.getAllUsers()
-2017-08-18 10:36:27.298 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update],methods=[POST],consumes=[application/json]}" onto public boolean com.videosplay.main.test.business.CustomerController.updateCustomer(int)
-2017-08-18 10:36:27.298 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update11],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.test.business.UserTest> com.videosplay.main.test.business.CustomerController.updateCustomerByJson(java.lang.String)
-2017-08-18 10:36:27.301 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update22],methods=[POST]}" onto public boolean com.videosplay.main.test.business.CustomerController.updateCustomerByJsonFormData(int,java.lang.String,java.lang.String)
-2017-08-18 10:36:27.303 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2017-08-18 10:36:27.303 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2017-08-18 10:36:27.342 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-08-18 10:36:27.343 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-08-18 10:36:27.391 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2017-08-18 10:36:27.729 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
-2017-08-18 10:36:27.731 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'statFilter' has been autodetected for JMX exposure
-2017-08-18 10:36:27.731 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
-2017-08-18 10:36:27.735 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
-2017-08-18 10:36:27.736 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
-2017-08-18 10:36:27.801 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
-2017-08-18 10:36:27.805 [main] INFO  com.videosplay.main.Application -Started Application in 6.244 seconds (JVM running for 7.038)
-2017-08-18 10:36:35.753 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
-2017-08-18 10:36:35.754 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
-2017-08-18 10:36:35.771 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
-2017-08-18 10:36:42.530 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
-2017-08-18 10:38:33.643 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
-2017-08-18 10:43:19.971 [http-nio-8080-exec-7] INFO  com.videosplay.main.Application -333333333333
-2017-08-18 10:43:19.972 [http-nio-8080-exec-7] ERROR com.videosplay.main.Application -à1111111111
-2017-08-18 10:43:19.972 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -2222222222
-2017-08-18 10:43:37.306 [http-nio-8080-exec-9] INFO  com.videosplay.main.Application -333333333333
-2017-08-18 10:43:37.306 [http-nio-8080-exec-9] ERROR com.videosplay.main.Application -à1111111111
-2017-08-18 10:43:37.306 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -2222222222
-2017-08-18 10:44:21.865 [http-nio-8080-exec-1] INFO  com.videosplay.main.Application -333333333333
-2017-08-18 10:44:21.865 [http-nio-8080-exec-1] ERROR com.videosplay.main.Application -à1111111111
-2017-08-18 10:44:21.865 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -2222222222
+2017-08-18 11:25:01.855 [main] INFO  org.hibernate.Version -HHH000412: Hibernate Core {5.0.12.Final}
+2017-08-18 11:25:01.856 [main] INFO  org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+2017-08-18 11:25:01.857 [main] INFO  org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+2017-08-18 11:25:01.893 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-08-18 11:25:02.000 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-08-18 11:25:02.382 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-08-18 11:25:03.220 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Fri Aug 18 11:24:59 CST 2017]; root of context hierarchy
+2017-08-18 11:25:03.340 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/getallinfos]}" onto public com.videosplay.main.InfosData com.videosplay.main.GreetingController.getInfos()
+2017-08-18 11:25:03.344 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/greeting]}" onto public com.videosplay.main.Greeting com.videosplay.main.GreetingController.greeting(java.lang.String)
+2017-08-18 11:25:03.350 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfos],methods=[POST]}" onto public java.util.List<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.GoodsController.getGoodsInfos()
+2017-08-18 11:25:03.351 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfosPage],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsInfo>> com.videosplay.main.business.control.GoodsController.getGoodsInfosByPage(java.lang.String)
+2017-08-18 11:25:03.352 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsDetailInfo],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.GoodsController.getGoodsDetailInfo(java.lang.String)
+2017-08-18 11:25:03.353 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodssort],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsSortList>> com.videosplay.main.business.control.GoodsSortController.getGoodsSortInfos()
+2017-08-18 11:25:03.354 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/mainlist],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.MainResponse> com.videosplay.main.business.control.MainPageController.showMainPage()
+2017-08-18 11:25:03.355 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsMarketShop],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.MarketShopResponse> com.videosplay.main.business.control.MarketShopController.getMarketShopList(java.lang.String)
+2017-08-18 11:25:03.357 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videosinfos],methods=[POST]}" onto public java.util.List<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.VideosController.getvideosInfos()
+2017-08-18 11:25:03.357 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videosinfosPage],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.Video>> com.videosplay.main.business.control.VideosController.getVideosInfosByPage(java.lang.String)
+2017-08-18 11:25:03.358 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videoDetailInfo],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.Video> com.videosplay.main.business.control.VideosController.getVideoDetailInfo(java.lang.String)
+2017-08-18 11:25:03.358 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videoplaycount],methods=[POST]}" onto public void com.videosplay.main.business.control.VideosController.updateVideoPlayCount(java.lang.String)
+2017-08-18 11:25:03.364 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/add],methods=[GET]}" onto public java.lang.String com.videosplay.main.test.business.CustomerController.addNewUser(java.lang.String,java.lang.String,int)
+2017-08-18 11:25:03.364 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/all],methods=[GET]}" onto public com.videosplay.main.test.business.ResonseData com.videosplay.main.test.business.CustomerController.getAllUsers()
+2017-08-18 11:25:03.365 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update],methods=[POST],consumes=[application/json]}" onto public boolean com.videosplay.main.test.business.CustomerController.updateCustomer(int)
+2017-08-18 11:25:03.368 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update11],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.test.business.UserTest> com.videosplay.main.test.business.CustomerController.updateCustomerByJson(java.lang.String)
+2017-08-18 11:25:03.371 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update22],methods=[POST]}" onto public boolean com.videosplay.main.test.business.CustomerController.updateCustomerByJsonFormData(int,java.lang.String,java.lang.String)
+2017-08-18 11:25:03.375 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-18 11:25:03.377 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-18 11:25:03.418 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-18 11:25:03.418 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-18 11:25:03.476 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-18 11:25:03.723 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-08-18 11:25:03.727 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'statFilter' has been autodetected for JMX exposure
+2017-08-18 11:25:03.728 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-08-18 11:25:03.734 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2017-08-18 11:25:03.736 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2017-08-18 11:25:03.798 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2017-08-18 11:25:03.803 [main] INFO  com.videosplay.main.Application -Started Application in 5.122 seconds (JVM running for 5.655)
+2017-08-18 11:25:07.461 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-18 11:25:07.461 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-18 11:25:07.475 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2017-08-18 11:25:07.569 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-18 11:28:07.906 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 2
+2017-08-18 11:28:07.906 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 2

@@ -55,6 +55,10 @@ public class MarketShopController {
                 if(info != null && info.size() > 0){
                     for(GoodsShop goodsItem: goodShops){
                         GoodsInfo rawGoods = info.stream().filter(item-> (item.getGoodsId() == goodsItem.getGoodsId())).findFirst().get();
+                        String queryPrice = "select * from goods_price where goods_id=" + rawGoods.getGoodsId();
+                        RowMapper<GoodsPrice> priceMapper = new BeanPropertyRowMapper<GoodsPrice>(GoodsPrice.class);
+                        List<GoodsPrice> prices = jdbcTemplate.query(queryPrice, priceMapper);
+                        rawGoods.setPricesList(prices);
                         if(rawGoods != null){
                             SelectMarketGoods selectMarketGoods = new SelectMarketGoods();
                             if(rawGoods.getGoodsNum() >= goodsItem.getCount()){

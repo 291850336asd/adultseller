@@ -67,13 +67,12 @@ public class MarketShopController {
                                     marketShopResponse.setSelectMarketGoodses(selectGoods);
                                 }
                                 selectMarketGoods.setCount(goodsItem.getCount());
-                                selectMarketGoods.setSelect(goodsItem.isSelect());
                                 selectMarketGoods.setGoodsInfo(rawGoods);
                             }else{
                                 selectMarketGoods.setCount(rawGoods.getGoodsNum());
-                                selectMarketGoods.setSelect(goodsItem.isSelect());
                                 selectMarketGoods.setGoodsInfo(rawGoods);
                             }
+                            selectMarketGoods.setSelect(goodsItem.isSelect());
                             if(selectMarketGoods.isSelect()){
                                 marketShopResponse.setSelectCount(marketShopResponse.getSelectCount() + selectMarketGoods.getCount());
                                 marketShopResponse.setTotalMoney(marketShopResponse.getTotalMoney().add(selectMarketGoods.getGoodsInfo().getGoodsShopPrice().multiply(new BigDecimal(selectMarketGoods.getCount()))));

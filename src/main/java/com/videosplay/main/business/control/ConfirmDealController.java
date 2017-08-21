@@ -31,14 +31,13 @@ public class ConfirmDealController {
     @CrossOrigin
     @PostMapping("/confirmDeal")
     @Transactional
-    public ResonseData<MarketShopResponse> confirmDeal(@RequestBody String request){
-        ResonseData<MarketShopResponse>  resonseData = new ResonseData<>();
+    public ResonseData<ConfirmDealResponse> confirmDeal(@RequestBody String request){
+        ResonseData<ConfirmDealResponse>  resonseData = new ResonseData<>();
         try{
-            println(request);
+            ConfirmDealResponse confirmDealResponse = new ConfirmDealResponse();
             ObjectMapper objectMapper = new ObjectMapper();
             RequestData<List<GoodsShop>> requestData = (RequestData<List<GoodsShop>>)objectMapper.readValue(request, new TypeReference<RequestData<List<GoodsShop>>>(){});
             if(requestData != null && requestData.getData()!=null && requestData.getData().size() > 0){
-                RowMapper<GoodsInfo> personMapper = new BeanPropertyRowMapper<GoodsInfo>(GoodsInfo.class);
                 MarketShopResponse marketShopResponse = new MarketShopResponse();
                 StringBuilder ids = new StringBuilder();
                 List<GoodsShop> goodShops = requestData.getData();
@@ -47,8 +46,16 @@ public class ConfirmDealController {
                         ids.append(goodsItem.getGoodsId() + ",");
                     }
                 }
+
+                String queryTransferStr = "select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in ("  + ids.toString().substring(0, ids.length()-1)   +") group by transfer_id  having count(transfer_id) > " + (goodShops.size()-1) + ")";
+                LogUtils.warn(queryTransferStr);
+                RowMapper<TransferShip> transferMapper = new BeanPropertyRowMapper<TransferShip>(TransferShip.class);
+                List<TransferShip> transferItem = jdbcTemplate.query(queryTransferStr, transferMapper);
+                confirmDealResponse.setTransfers(transferItem);
+
                 String queryStr = "select * from goods_info where goods_id in (" + ids.toString().substring(0, ids.length()-1) +  ")";
                 LogUtils.warn(queryStr);
+                RowMapper<GoodsInfo> personMapper = new BeanPropertyRowMapper<GoodsInfo>(GoodsInfo.class);
                 List<GoodsInfo> info = jdbcTemplate.query(queryStr.toString(), personMapper);
                 if(info != null && info.size() > 0){
                     for(GoodsShop goodsItem: goodShops){
@@ -79,7 +86,8 @@ public class ConfirmDealController {
                         }
                     }
                 }
-                resonseData.setData(marketShopResponse);
+                confirmDealResponse.setMarketShop(marketShopResponse);
+                resonseData.setData(confirmDealResponse);
                 resonseData.setMessage("success");
             }
         }catch (Exception e){

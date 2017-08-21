@@ -55,6 +55,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 	PRIMARY KEY (`user_id`)
 ) DEFAULT CHARSET=utf8;
 INSERT INTO `user` (`user_nickname`, `user_phone`, `user_password`, `user_type`) VALUES
+('管理员', '11011011011', '123456', 0),
 ('飞火', '15323454321', '123456', 10);
 
 DROP TABLE IF EXISTS `user_address`;
@@ -237,7 +238,78 @@ INSERT INTO `goods_price` (`goods_id`, `goods_color_style_model`, `goods_price`)
 (19, "红色金边边 中号", 100.30),
 (20, "黑色半透明边 中号", 100.30),
 (21, "红色蕾丝边 中号", 100.30),
-(22, "黑色蕾丝边 小号", 100.30)
+(22, "黑色蕾丝边 小号", 100.30);
+
+
+
+DROP TABLE IF EXISTS `goods_transfer`;
+CREATE TABLE IF NOT EXISTS `goods_transfer` (
+	`transfer_id` tinyint(3) unsigned NOT NULL AUTO_INCREMENT,
+	`transfer_code` varchar(20) NOT NULL DEFAULT '',
+	`transfer_name` varchar(120) NOT NULL DEFAULT '',
+	`transfer_desc` varchar(255) NOT NULL DEFAULT '',
+	`transfer_able` BOOLEAN NOT NULL DEFAULT TRUE,
+	PRIMARY KEY (`transfer_id`)
+) DEFAULT CHARSET=utf8;
+INSERT INTO `goods_transfer` (`transfer_code`, `transfer_name`, `transfer_desc`) VALUES
+('normal', '普通类型', '快递方式只能卖家选择'),
+('post_express', '邮政快递包裹', '邮政快递包裹的描述内容。'),
+('yto', '圆通速递', '上海圆通物流（速递）有限公司经过多年的网络快速发展，在中国速递行业中一直处于领先地位'),
+('city_express', '城际快递', '配送的运费是固定的'),
+('flat', '市内快递', '固定运费的配送方式内容'),
+('sto_express', '申通快递', '江、浙、沪地区首重为15元/KG，其他地区18元/KG， 续重均为5-6元/KG， 云南地区为8元'),
+('post_mail', '邮局平邮', '邮局平邮的描述内容。'),
+('fpd', '运费到付', '所购商品到达即付运费');
+
+
+DROP TABLE IF EXISTS `goods_transfer_service`;
+CREATE TABLE IF NOT EXISTS `goods_transfer_service` (
+	`transfers_service__id` INT unsigned NOT NULL AUTO_INCREMENT,
+	`goods_id` MEDIUMINT(8) UNSIGNED NOT NULL,
+	`transfer_id` TINYINT(3) UNSIGNED NOT NULL,
+	PRIMARY KEY (`transfers_service__id`)
+) DEFAULT CHARSET=utf8;
+INSERT INTO `goods_transfer_service` (`goods_id`, `transfer_id`) VALUES
+(1, 1),
+(1, 2),
+(1, 3),
+(1, 4),
+(1, 5),
+(1, 6),
+(1, 7),
+(1, 8),
+(2, 1),
+(2, 2),
+(2, 3),
+(2, 4),
+(2, 5),
+(2, 6),
+(2, 7),
+(2, 8),
+(3, 1),
+(3, 2),
+(3, 3),
+(4, 1),
+(4, 5),
+(5, 1),
+(6, 1),
+(7, 1),
+(8, 1),
+(9, 1),
+(10, 1),
+(11, 1),
+(12, 1),
+(13, 1),
+(14, 1),
+(15, 1),
+(16, 1),
+(17, 1),
+(18, 1),
+(19, 1),
+(20, 1),
+(21, 1),
+(22, 1);
+
 
 
 

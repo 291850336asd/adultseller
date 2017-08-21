@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Created by sunmeng on 17/8/16.
@@ -24,15 +23,15 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping(path="/api")
-public class MarketShopController {
+public class ConfirmDealController {
 
     @Autowired
     JdbcTemplate jdbcTemplate;
 
     @CrossOrigin
-    @PostMapping("/goodsMarketShop")
+    @PostMapping("/confirmDeal")
     @Transactional
-    public ResonseData<MarketShopResponse> getMarketShopList(@RequestBody String request){
+    public ResonseData<MarketShopResponse> confirmDeal(@RequestBody String request){
         ResonseData<MarketShopResponse>  resonseData = new ResonseData<>();
         try{
             println(request);

@@ -339,5 +339,92 @@ INSERT INTO `goods_transfer_service` (`goods_id`, `transfer_id`) VALUES
 
 
 
+DROP TABLE IF EXISTS `goods_comments`;
+CREATE TABLE IF NOT EXISTS `goods_comments` (
+	`comments_id` INT unsigned NOT NULL AUTO_INCREMENT,
+	`goods_id` MEDIUMINT(8) UNSIGNED NOT NULL,
+	`user_name` VARCHAR(20) NOT NULL DEFAULT '',
+	`comments_time` TIMESTAMP NOT NULL DEFAULT current_timestamp,
+	`coments_dec` VARCHAR(500) NOT NULL DEFAULT '',
+	`comments_star` ENUM('good', 'middle', 'bad') NOT NULL DEFAULT 'good',
+	PRIMARY KEY (`comments_id`)
+) DEFAULT CHARSET=utf8;
+INSERT INTO `goods_comments` (`goods_id`, `user_name`, `coments_dec`) VALUES
+(1, '全靠浪', '浪的飞起'),
+(1, '全靠浪', '浪的飞起2'),
+(1, '全靠浪', '浪的飞起'),
+(1, '全靠浪', '浪的飞起2'),
+(1, '全靠浪', '浪的飞起'),
+(1, '全靠浪', '浪的飞起2'),
+(1, '全靠浪', '浪的飞起'),
+(1, '全靠浪', '浪的飞起2'),
+(1, '全靠浪', '浪的飞起'),
+(1, '全靠浪', '浪的飞起2'),
+(1, '全靠浪', '浪的飞起'),
+(1, '全靠浪', '浪的飞起2'),
+(1, '全靠浪', '浪的飞起2'),
+(1, '全靠浪', '浪的飞起'),
+(1, '全靠浪', '浪的飞起'),
+(1, '全靠浪', '浪的飞起2'),
+(1, '全靠浪', '浪的飞起'),
+(1, '全靠浪', '浪的飞起2'),
+(1, '全靠浪', '浪的飞起'),
+(1, '全靠浪', '浪的飞起2'),
+(1, '全靠浪', '浪的飞起'),
+(2, '全靠浪', '浪的飞起'),
+(2, '全靠浪', '浪的飞起2'),
+(2, '全靠浪', '浪的飞起'),
+(2, '全靠浪', '浪的飞起2'),
+(2, '全靠浪', '浪的飞起'),
+(3, '全靠浪', '浪的飞起2'),
+(4, '全靠浪', '浪的飞起'),
+(4, '全靠浪', '浪的飞起'),
+(5, '全靠浪', '浪的飞起2'),
+(6, '全靠浪', '浪的飞起'),
+(7, '全靠浪', '浪的飞起2'),
+(8, '全靠浪', '浪的飞起'),
+(9, '全靠浪', '浪的飞起2'),
+(10, '全靠浪', '浪的飞起'),
+(11, '全靠浪', '浪的飞起2'),
+(12, '全靠浪', '浪的飞起'),
+(13, '全靠浪', '浪的飞起2'),
+(14, '全靠浪', '浪的飞起'),
+(15, '全靠浪', '浪的飞起2'),
+(16, '全靠浪', '浪的飞起'),
+(17, '全靠浪', '浪的飞起2');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

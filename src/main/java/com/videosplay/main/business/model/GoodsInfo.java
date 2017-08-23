@@ -1,11 +1,14 @@
 package com.videosplay.main.business.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.math.BigDecimal;
 import java.util.List;
 
 /**
  * Created by sunmeng on 17/8/5.
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class GoodsInfo extends GoodsId{
     private String goodsName;
     private int goodsType;
@@ -17,8 +20,16 @@ public class GoodsInfo extends GoodsId{
     private String goodsImg;
     private String promoteGift;
     private String goodsCode;
-
+    private List<GoodsComments> goodsComments;
     private List<GoodsPrice> pricesList;
+
+    public List<GoodsComments> getGoodsComments() {
+        return goodsComments;
+    }
+
+    public void setGoodsComments(List<GoodsComments> goodsComments) {
+        this.goodsComments = goodsComments;
+    }
 
     public List<GoodsPrice> getPricesList() {
         return pricesList;

@@ -8,6 +8,25 @@ public class RequestData<T> {
     private String requestCode;
     private T data;
 
+    private int pageSize = 10;
+    private int page = 0;
+
+    public int getPageSize() {
+        return pageSize;
+    }
+
+    public void setPageSize(int pageSize) {
+        this.pageSize = pageSize;
+    }
+
+    public int getPage() {
+        return page;
+    }
+
+    public void setPage(int page) {
+        this.page = page;
+    }
+
     public int getType() {
         return type;
     }

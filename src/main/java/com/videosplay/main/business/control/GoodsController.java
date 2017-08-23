@@ -4,6 +4,8 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.videosplay.main.business.model.GoodsInfo;
 import com.videosplay.main.business.model.GoodsPrice;
+import com.videosplay.main.business.model.SortRequest;
+import com.videosplay.main.business.model.Video;
 import com.videosplay.main.business.utils.LogUtils;
 import com.videosplay.main.business.utils.StringUtils;
 import com.videosplay.main.test.business.RequestData;
@@ -46,7 +48,7 @@ public class GoodsController {
             RowMapper<GoodsInfo> personMapper = new BeanPropertyRowMapper<GoodsInfo>(GoodsInfo.class);
             StringBuilder queryStr = new StringBuilder("select * from goods_info");
             if(requestData != null){
-                queryStr.append(StringUtils.getPageSizeQuery(requestData.getData().getPage(), requestData.getData().getPageSize()));
+                queryStr.append(StringUtils.getPageSizeQuery(requestData.getPage(), requestData.getPageSize()));
             }
             List<GoodsInfo> info = jdbcTemplate.query(queryStr.toString(), personMapper);
             resonseData.setData(info);
@@ -60,12 +62,49 @@ public class GoodsController {
         return resonseData;
     }
 
+
+
+    @CrossOrigin
+    @PostMapping("/goodsinfosSort")
+    public ResonseData<List<GoodsInfo>> getGoodsInfosBySort(@RequestBody String request){
+
+        ResonseData<List<GoodsInfo>> resonseData = new ResonseData<List<GoodsInfo>>();
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            RequestPageData<SortRequest> requestData = (RequestPageData<SortRequest>)objectMapper.readValue(request, new TypeReference<RequestPageData<SortRequest>>(){});
+            RowMapper<GoodsInfo> personMapper = new BeanPropertyRowMapper<GoodsInfo>(GoodsInfo.class);
+            StringBuilder queryStr = new StringBuilder("select * from goods_info where ");
+            if(requestData != null && requestData.getData() != null){
+                if(requestData.getData().getItemType() == 0){
+                    queryStr.append("goods_type in (select sort_type from goods_sort where sort_parent_type = " + requestData.getData().getParentType() + ")");
+                }else{
+                    queryStr.append("goods_type = " + requestData.getData().getItemType() + "");
+                }
+                queryStr.append(StringUtils.getPageSizeQuery(requestData.getPage(), requestData.getPageSize()));
+            }
+            println(queryStr.toString());
+            List<GoodsInfo> info = jdbcTemplate.query(queryStr.toString(), personMapper);
+            resonseData.setData(info);
+            resonseData.setCode(200);
+            resonseData.setMessage("success");
+        }catch (IOException e){
+            resonseData.setData(new ArrayList<>());
+            resonseData.setCode(400);
+            resonseData.setData(null);
+        }
+        return resonseData;
+    }
+
+
+
+
+
+
     @CrossOrigin
     @PostMapping("/goodsDetailInfo")
     public ResonseData<GoodsInfo> getGoodsDetailInfo(@RequestBody String request){
         ResonseData<GoodsInfo>  resonseData = new ResonseData<>();
         try{
-            println(request);
             ObjectMapper objectMapper = new ObjectMapper();
             RequestData<GoodsInfo> requestData = (RequestData<GoodsInfo>)objectMapper.readValue(request, new TypeReference<RequestData<GoodsInfo>>(){});
             RowMapper<GoodsInfo> personMapper = new BeanPropertyRowMapper<GoodsInfo>(GoodsInfo.class);

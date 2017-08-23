@@ -38,6 +38,7 @@ public class VideosController {
     @CrossOrigin
     @PostMapping("/videosinfosPage")
     public ResonseData<List<Video>> getVideosInfosByPage(@RequestBody String request){
+        println(request);
         ResonseData<List<Video>> resonseData = new ResonseData<List<Video>>();
         try {
             ObjectMapper objectMapper = new ObjectMapper();
@@ -45,7 +46,7 @@ public class VideosController {
             RowMapper<Video> personMapper = new BeanPropertyRowMapper<Video>(Video.class);
             StringBuilder queryStr = new StringBuilder("select * from videos");
             if(requestData != null){
-                queryStr.append(StringUtils.getPageSizeQuery(requestData.getData().getPage(), requestData.getData().getPageSize()));
+                queryStr.append(StringUtils.getPageSizeQuery(requestData.getPage(), requestData.getPageSize()));
             }
 
             List<Video> info = jdbcTemplate.query(queryStr.toString(), personMapper);

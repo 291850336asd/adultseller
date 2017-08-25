@@ -20,12 +20,19 @@ import java.util.List;
 @Component
 public class ScheduledTasks {
 
+    private int second = 1000;
+    private long minute = second * 60;
+    private long halfHour = 30 * minute;
+    private long hour = minute * 60;
+    private long day = hour * 24;
+
     @Autowired
     JdbcTemplate jdbcTemplate;
     @Scheduled(cron = "0 0/5 * * * ?")
     public void showText(){
+        System.out.println("qqqqqqqqq");
         RowMapper<DealMode> dealMapper = new BeanPropertyRowMapper<DealMode>(DealMode.class);
-        StringBuilder queryDeals = new StringBuilder("select * from deals where deal_state=NOTPAY or deal_state=OVERDATE");
+        StringBuilder queryDeals = new StringBuilder("select * from deals where deal_state='NOTPAY' or deal_state='OVERDATE'");
         List<DealMode> allUnPayDeals = jdbcTemplate.query(queryDeals.toString(), dealMapper);
         for (DealMode item: allUnPayDeals) {
             checkAndUpdateDeals(item);
@@ -34,6 +41,16 @@ public class ScheduledTasks {
 
     @Transactional
     private void checkAndUpdateDeals(DealMode dealMode){
-        System.out.println(dealMode.getDealTime() + ":" + new Date().getTime());
+        try{
+            long current = new Date().getTime();
+            long betweenTime = current - dealMode.getDealTime().getTime();
+            if(betweenTime > day){
+                jdbcTemplate.update("delete from deals where deal_id="+ dealMode.getDealId());
+            }else if(betweenTime > halfHour){
+                jdbcTemplate.update("update deals set deal_state='OVERDATE' where deal_id="+ dealMode.getDealId());
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

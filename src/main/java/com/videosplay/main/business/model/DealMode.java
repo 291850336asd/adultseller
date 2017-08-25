@@ -1,5 +1,7 @@
 package com.videosplay.main.business.model;
 
+import java.sql.Timestamp;
+
 /**
  * Created by sunmeng on 17/8/25.
  */
@@ -7,7 +9,7 @@ public class DealMode {
     private int dealId;
     private int userId;
     private String device;
-    private long dealTime;
+    private Timestamp dealTime;
     private int payType;
     private String transferCode;
     private DeliverState deliverState;
@@ -37,11 +39,11 @@ public class DealMode {
         this.device = device;
     }
 
-    public long getDealTime() {
+    public Timestamp getDealTime() {
         return dealTime;
     }
 
-    public void setDealTime(long dealTime) {
+    public void setDealTime(Timestamp dealTime) {
         this.dealTime = dealTime;
     }
 

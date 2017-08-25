@@ -394,10 +394,46 @@ INSERT INTO `goods_comments` (`goods_id`, `user_name`, `coments_dec`) VALUES
 (17, '全靠浪', '浪的飞起2');
 
 
+DROP TABLE IF EXISTS `pay_mode`;
+CREATE TABLE IF NOT EXISTS `pay_mode` (
+	`pay_mode_id` TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+	`pay_mode_type` ENUM('alibaba', 'wechat'),
+	`pay_mode_name` VARCHAR(50) NOT NULL,
+	`pay_mode_desc` VARCHAR(500) NOT NULL DEFAULT '',
+	PRIMARY KEY (`pay_mode_id`)
+) DEFAULT CHARSET=utf8;
+INSERT INTO `pay_mode` (`pay_mode_type`,`pay_mode_name`, `pay_mode_desc`) VALUES
+('alibaba','支付宝', '阿里巴巴'),
+('wechat','微信支付', '微信支付');
 
 
 
+-- state 未支付 已支付 已过期(30分钟)可重新支付 超过一天则删除该数据
+-- deal_serial 订单支付完后的序列号
+DROP TABLE IF EXISTS `deals`;
+CREATE TABLE IF NOT EXISTS `deals` (
+	`deal_id` MEDIUMINT(8) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`user_id` MEDIUMINT(8) NOT NULL DEFAULT 0,
+	`device` VARCHAR(50) NOT NULL DEFAULT '',
+	`deal_time` TIMESTAMP NOT NULL DEFAULT current_timestamp,
+	`pay_type` INT NOT NULL,
+	`transfer_code` varchar(20) NOT NULL DEFAULT 'normal',
+	`deal_serial` VARCHAR(255),
+	`deliver_state` ENUM('NOTSEND','SEND', 'NORECEIVE', 'DONE') DEFAULT 'NOTSEND',
+	`deal_state` ENUM('NOTPAY','PAY', 'OVRRDATE') DEFAULT 'NOTPAY',
+	PRIMARY KEY (`deal_id`)
+) DEFAULT CHARSET=utf8;
 
+
+DROP TABLE IF EXISTS `deals_shop`;
+CREATE TABLE IF NOT EXISTS `deals_shop` (
+	`deal_shop_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	`goods_id` MEDIUMINT(8) NOT NULL,
+	`goods_count` INT NOT NULL,
+	`goods_price_id` MEDIUMINT(8),
+	`deal_id` MEDIUMINT(8) UNSIGNED NOT NULL,
+	PRIMARY KEY(`deal_shop_id`)
+) DEFAULT CHARSET=utf8;
 
 
 

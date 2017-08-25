@@ -6,6 +6,15 @@ package com.videosplay.main.business.model;
 public class GoodsShop extends GoodsId{
     private int count;
     private boolean select;
+    private int goodsPriceId;
+
+    public int getGoodsPriceId() {
+        return goodsPriceId;
+    }
+
+    public void setGoodsPriceId(int goodsPriceId) {
+        this.goodsPriceId = goodsPriceId;
+    }
 
     public boolean isSelect() {
         return select;

@@ -25,7 +25,6 @@ public class VideosController {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-
     @CrossOrigin
     @PostMapping("/videosinfos")
     public List<GoodsInfo> getvideosInfos(){

@@ -30,7 +30,6 @@ public class ResonseData<T> {
     }
 
     public void setData(T data) {
-        this.code = 200;
         this.data = data;
     }
 

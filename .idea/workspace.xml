@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1341407-3f3a-4442-b8f1-40f5c0e69d97" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/error-20170825.log.0" afterPath="$PROJECT_DIR$/logs/error-20170825.log.0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/info-20170825.log.0" afterPath="$PROJECT_DIR$/logs/info-20170825.log.0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DealMode.java" afterPath="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DealMode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DealState.java" afterPath="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DealState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/quartz/ScheduledTasks.java" afterPath="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/quartz/ScheduledTasks.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DeliverState.java" afterPath="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DeliverState.java" />
     </list>
     <ignored path="complete.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,20 +40,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="adultsell.sql" pinned="false" current-in-tab="false">
+      <file leaf-file-name="adultsell.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/adultsell.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.48913044">
               <caret line="422" column="23" selection-start-line="422" selection-start-column="23" selection-end-line="422" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScheduledTasks.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScheduledTasks.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/videosplay/main/business/quartz/ScheduledTasks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5925156">
+            <state vertical-scroll-proportion="0.0">
               <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
               <folding>
                 <element signature="e#1121#1131#0" expanded="true" />
@@ -79,11 +77,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DeliverState.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DeliverState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DealState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DealState.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnumStr.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/EnumStr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -607,12 +625,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/GoodsShop.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/videosplay/main/test/business/ResonseData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/CreateDealModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DeliverState.java" />
         <option value="$PROJECT_DIR$/adultsell.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/control/DealsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DealMode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/quartz/ScheduledTasks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DealState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DeliverState.java" />
       </list>
     </option>
   </component>
@@ -629,8 +647,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="14" />
-    <option name="y" value="24" />
+    <option name="x" value="-64" />
+    <option name="y" value="196" />
     <option name="width" value="1440" />
     <option name="height" value="873" />
   </component>
@@ -1541,12 +1559,12 @@
       <workItem from="1503062477992" duration="2004000" />
       <workItem from="1503113810605" duration="609000" />
       <workItem from="1503116167220" duration="55526000" />
-      <workItem from="1503665108543" duration="7410000" />
+      <workItem from="1503665108543" duration="7487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242400000" />
+    <option name="totallyTimeSpent" value="242477000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1558,18 +1576,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="14" y="24" width="1440" height="873" extended-state="0" />
+    <frame x="-64" y="196" width="1440" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293247" sideWeight="0.49574015" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839963" sideWeight="0.48668796" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34827146" sideWeight="0.10586552" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13956466" sideWeight="0.42703864" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66325223" sideWeight="0.48497853" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34827146" sideWeight="0.89413446" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.659411" sideWeight="0.5765379" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34827146" sideWeight="0.89413446" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13956466" sideWeight="0.5729614" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1826,14 +1844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/EnumStr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/GoodsInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2027,14 +2037,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DeliverState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0996016">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/videosplay/main/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17928287">
@@ -2089,10 +2091,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adultsell.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/videosplay/main/business/quartz/ScheduledTasks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="422" column="23" selection-start-line="422" selection-start-column="23" selection-end-line="422" selection-end-column="23" />
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="e#1121#1131#0" expanded="true" />
+            <marker date="1503673490000" expanded="true" signature="1757:1789" placeholder="delete from " />
+            <marker date="1503673490000" expanded="true" signature="1898:1951" placeholder="update deals... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/EnumStr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DealState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2108,23 +2130,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DealState.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/videosplay/main/business/model/DeliverState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/videosplay/main/business/quartz/ScheduledTasks.java">
+    <entry file="file://$PROJECT_DIR$/adultsell.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5925156">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding>
-            <element signature="e#1121#1131#0" expanded="true" />
-            <marker date="1503673490000" expanded="true" signature="1757:1789" placeholder="delete from " />
-            <marker date="1503673490000" expanded="true" signature="1898:1951" placeholder="update deals... " />
-          </folding>
+        <state vertical-scroll-proportion="0.48913044">
+          <caret line="422" column="23" selection-start-line="422" selection-start-column="23" selection-end-line="422" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

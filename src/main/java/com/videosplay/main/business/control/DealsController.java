@@ -76,8 +76,11 @@ public class DealsController {
                         }
                         println(inserShop.toString());
                         int i = jdbcTemplate.update(inserShop.toString());
-                        println(String.valueOf(i));
-                        resonseData.setCode(200);
+                        if(i == length){
+                            resonseData.setCode(200);
+                        }else{
+                            resonseData.setCode(400);
+                        }
                     }
                 }
             }

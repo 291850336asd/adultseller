@@ -419,8 +419,8 @@ CREATE TABLE IF NOT EXISTS `deals` (
 	`pay_type` INT NOT NULL,
 	`transfer_code` varchar(20) NOT NULL DEFAULT 'normal',
 	`deal_serial` VARCHAR(255),
-	`deliver_state` ENUM('NOTSEND','SEND', 'NORECEIVE', 'DONE') DEFAULT 'NOTSEND',
-	`deal_state` ENUM('NOTPAY','PAY', 'OVRRDATE') DEFAULT 'NOTPAY',
+	`deliver_state` ENUM('NOTSEND','SEND', 'NOTRECEIVE', 'DONE') DEFAULT 'NOTSEND',
+	`deal_state` ENUM('NOTPAY','PAY', 'OVERDATE') DEFAULT 'NOTPAY',
 	PRIMARY KEY (`deal_id`)
 ) DEFAULT CHARSET=utf8;
 

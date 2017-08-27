@@ -2298,3 +2298,8 @@ Caused by: java.lang.IllegalArgumentException: No enum constant com.videosplay.m
 2017-08-25 23:41:01.963 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
 2017-08-25 23:41:02.007 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
 2017-08-25 23:41:02.010 [main] INFO  com.videosplay.main.Application -Started Application in 4.561 seconds (JVM running for 5.131)
+2017-08-25 23:42:37.101 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Fri Aug 25 23:40:57 CST 2017]; root of context hierarchy
+2017-08-25 23:42:37.102 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2017-08-25 23:42:37.103 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans
+2017-08-25 23:42:37.104 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-08-25 23:42:37.109 [Thread-3] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} closed

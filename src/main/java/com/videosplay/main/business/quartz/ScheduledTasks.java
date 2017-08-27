@@ -46,6 +46,7 @@ public class ScheduledTasks {
             long betweenTime = current - dealMode.getDealTime().getTime();
             if(betweenTime > day){
                 jdbcTemplate.update("delete from deals where deal_id="+ dealMode.getDealId());
+                jdbcTemplate.update("delete from deals_shop where deal_id="+ dealMode.getDealId());
             }else if(betweenTime > halfHour){
                 jdbcTemplate.update("update deals set deal_state='OVERDATE' where deal_id="+ dealMode.getDealId());
             }

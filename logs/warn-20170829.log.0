@@ -1,0 +1,22 @@
+2017-08-29 15:37:16.561 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-29 15:37:18.449 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-29 15:37:18.460 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-29 15:37:20.065 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1) group by transfer_id  having count(transfer_id) > 0)
+2017-08-29 15:37:20.072 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-29 15:37:23.417 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-29 15:37:28.780 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-29 15:37:33.554 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-29 15:37:33.558 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-29 15:37:37.446 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 2
+2017-08-29 15:37:41.215 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-08-29 15:37:41.217 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-08-29 15:37:43.010 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-08-29 15:37:47.679 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1,2) group by transfer_id  having count(transfer_id) > 1)
+2017-08-29 15:37:47.681 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-08-29 15:43:32.742 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-08-29 15:43:48.499 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 3
+2017-08-29 15:43:56.234 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2,3)
+2017-08-29 15:43:56.244 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2,3)
+2017-08-29 15:43:58.361 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2,3)
+2017-08-29 15:43:59.526 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1,2,3) group by transfer_id  having count(transfer_id) > 2)
+2017-08-29 15:43:59.528 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2,3)

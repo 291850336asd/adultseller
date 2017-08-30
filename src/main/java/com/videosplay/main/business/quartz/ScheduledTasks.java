@@ -1,5 +1,6 @@
 package com.videosplay.main.business.quartz;
 
+import com.videosplay.main.business.dealcahce.DealBlockQueue;
 import com.videosplay.main.business.model.DealMode;
 import com.videosplay.main.business.model.GoodsComments;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,7 @@ public class ScheduledTasks {
 
     @Autowired
     JdbcTemplate jdbcTemplate;
-    @Scheduled(cron = "0 0/5 * * * ?")
+    @Scheduled(cron = "0 0/10 * * * ?")
     public void showText(){
         System.out.println("qqqqqqqqq");
         RowMapper<DealMode> dealMapper = new BeanPropertyRowMapper<DealMode>(DealMode.class);
@@ -42,16 +43,21 @@ public class ScheduledTasks {
     @Transactional
     private void checkAndUpdateDeals(DealMode dealMode){
         try{
-            long current = new Date().getTime();
-            long betweenTime = current - dealMode.getDealTime().getTime();
-            if(betweenTime > day){
-                jdbcTemplate.update("delete from deals where deal_id="+ dealMode.getDealId());
-                jdbcTemplate.update("delete from deals_shop where deal_id="+ dealMode.getDealId());
-            }else if(betweenTime > halfHour){
-                jdbcTemplate.update("update deals set deal_state='OVERDATE' where deal_id="+ dealMode.getDealId());
+            if(DealBlockQueue.add(String.valueOf(dealMode.getDealId()))){
+                long current = new Date().getTime();
+                long betweenTime = current - dealMode.getDealTime().getTime();
+                if(betweenTime > day){
+                    jdbcTemplate.update("delete from deals where deal_id="+ dealMode.getDealId());
+                    jdbcTemplate.update("delete from deals_shop where deal_id="+ dealMode.getDealId());
+                }else if(betweenTime > halfHour){
+                    jdbcTemplate.update("update deals set deal_state='OVERDATE' where deal_id="+ dealMode.getDealId());
+                }
             }
+
         }catch (Exception e){
             e.printStackTrace();
+        }finally {
+            DealBlockQueue.removeDealId(String.valueOf(dealMode.getDealId()));
         }
     }
 }

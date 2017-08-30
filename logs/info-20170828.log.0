@@ -1,0 +1,339 @@
+2017-08-28 09:37:44.043 [main] INFO  com.videosplay.main.Application -Starting Application on sunmengdeMacBook-Pro.local with PID 786 (/Users/sunmeng/Desktop/springmvc/gs-rest-service/complete/build/classes/main started by sunmeng in /Users/sunmeng/Desktop/springmvc/gs-rest-service/complete)
+2017-08-28 09:37:44.049 [main] INFO  com.videosplay.main.Application -No active profile set, falling back to default profiles: default
+2017-08-28 09:37:44.143 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Aug 28 09:37:44 CST 2017]; root of context hierarchy
+2017-08-28 09:37:45.969 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2017-08-28 09:37:45.985 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2017-08-28 09:37:45.986 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-08-28 09:37:46.095 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-08-28 09:37:46.096 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1952 ms
+2017-08-28 09:37:46.268 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-28 09:37:46.270 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-08-28 09:37:46.273 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-28 09:37:46.273 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-28 09:37:46.274 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-28 09:37:46.274 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-28 09:37:46.274 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'webStatFilter' to urls: [/*]
+2017-08-28 09:37:46.824 [main] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+2017-08-28 09:37:47.089 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-08-28 09:37:47.105 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-08-28 09:37:47.291 [main] INFO  org.hibernate.Version -HHH000412: Hibernate Core {5.0.12.Final}
+2017-08-28 09:37:47.293 [main] INFO  org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+2017-08-28 09:37:47.295 [main] INFO  org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+2017-08-28 09:37:47.339 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-08-28 09:37:47.466 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-08-28 09:37:47.884 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-08-28 09:37:48.423 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Aug 28 09:37:44 CST 2017]; root of context hierarchy
+2017-08-28 09:37:48.496 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/getallinfos]}" onto public com.videosplay.main.InfosData com.videosplay.main.GreetingController.getInfos()
+2017-08-28 09:37:48.499 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/greeting]}" onto public com.videosplay.main.Greeting com.videosplay.main.GreetingController.greeting(java.lang.String)
+2017-08-28 09:37:48.500 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/getInfos]}" onto public java.lang.String com.videosplay.main.GreetingController.getInfo()
+2017-08-28 09:37:48.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/confirmDeal],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.ConfirmDealResponse> com.videosplay.main.business.control.ConfirmDealController.confirmDeal(java.lang.String)
+2017-08-28 09:37:48.504 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/createDeal],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData com.videosplay.main.business.control.DealsController.createDeal(java.lang.String)
+2017-08-28 09:37:48.506 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfos],methods=[POST]}" onto public java.util.List<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.GoodsController.getGoodsInfos()
+2017-08-28 09:37:48.506 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfosPage],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsInfo>> com.videosplay.main.business.control.GoodsController.getGoodsInfosByPage(java.lang.String)
+2017-08-28 09:37:48.507 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfosSort],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsInfo>> com.videosplay.main.business.control.GoodsController.getGoodsInfosBySort(java.lang.String)
+2017-08-28 09:37:48.507 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsDetailInfo],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.GoodsController.getGoodsDetailInfo(java.lang.String)
+2017-08-28 09:37:48.507 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsComments],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsComments>> com.videosplay.main.business.control.GoodsController.getGoodsComments(java.lang.String)
+2017-08-28 09:37:48.508 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodssort],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsSortList>> com.videosplay.main.business.control.GoodsSortController.getGoodsSortInfos()
+2017-08-28 09:37:48.509 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/mainlist],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.MainResponse> com.videosplay.main.business.control.MainPageController.showMainPage()
+2017-08-28 09:37:48.510 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsMarketShop],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.MarketShopResponse> com.videosplay.main.business.control.MarketShopController.getMarketShopList(java.lang.String)
+2017-08-28 09:37:48.512 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videosinfos],methods=[POST]}" onto public java.util.List<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.VideosController.getvideosInfos()
+2017-08-28 09:37:48.512 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videosinfosPage],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.Video>> com.videosplay.main.business.control.VideosController.getVideosInfosByPage(java.lang.String)
+2017-08-28 09:37:48.512 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videoDetailInfo],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.Video> com.videosplay.main.business.control.VideosController.getVideoDetailInfo(java.lang.String)
+2017-08-28 09:37:48.514 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videoplaycount],methods=[POST]}" onto public void com.videosplay.main.business.control.VideosController.updateVideoPlayCount(java.lang.String)
+2017-08-28 09:37:48.519 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/add],methods=[GET]}" onto public java.lang.String com.videosplay.main.test.business.CustomerController.addNewUser(java.lang.String,java.lang.String,int)
+2017-08-28 09:37:48.520 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/all],methods=[GET]}" onto public com.videosplay.main.test.business.ResonseData com.videosplay.main.test.business.CustomerController.getAllUsers()
+2017-08-28 09:37:48.520 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update],methods=[POST],consumes=[application/json]}" onto public boolean com.videosplay.main.test.business.CustomerController.updateCustomer(int)
+2017-08-28 09:37:48.521 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update11],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.test.business.UserTest> com.videosplay.main.test.business.CustomerController.updateCustomerByJson(java.lang.String)
+2017-08-28 09:37:48.521 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update22],methods=[POST]}" onto public boolean com.videosplay.main.test.business.CustomerController.updateCustomerByJsonFormData(int,java.lang.String,java.lang.String)
+2017-08-28 09:37:48.523 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-28 09:37:48.524 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-28 09:37:48.552 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-28 09:37:48.552 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-28 09:37:48.591 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-28 09:37:48.769 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-08-28 09:37:48.770 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'statFilter' has been autodetected for JMX exposure
+2017-08-28 09:37:48.770 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-08-28 09:37:48.774 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2017-08-28 09:37:48.775 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2017-08-28 09:37:48.785 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-08-28 09:37:48.836 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2017-08-28 09:37:48.840 [main] INFO  com.videosplay.main.Application -Started Application in 5.345 seconds (JVM running for 6.009)
+2017-08-28 14:22:39.815 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-28 14:22:39.816 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-28 14:22:39.831 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-08-28 14:23:28.744 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 14:23:30.709 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2)
+2017-08-28 14:23:30.709 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2)
+2017-08-28 14:23:32.667 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2) group by transfer_id  having count(transfer_id) > 0)
+2017-08-28 14:23:32.674 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2)
+2017-08-28 14:23:40.134 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Aug 28 09:37:44 CST 2017]; root of context hierarchy
+2017-08-28 14:23:40.136 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2017-08-28 14:23:40.136 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans
+2017-08-28 14:23:40.137 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-08-28 14:23:40.141 [Thread-3] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} closed
+2017-08-28 14:23:43.449 [main] INFO  com.videosplay.main.Application -Starting Application on sunmengdeMacBook-Pro.local with PID 1151 (/Users/sunmeng/Desktop/springmvc/gs-rest-service/complete/build/classes/main started by sunmeng in /Users/sunmeng/Desktop/springmvc/gs-rest-service/complete)
+2017-08-28 14:23:43.452 [main] INFO  com.videosplay.main.Application -No active profile set, falling back to default profiles: default
+2017-08-28 14:23:43.557 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Aug 28 14:23:43 CST 2017]; root of context hierarchy
+2017-08-28 14:23:45.613 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2017-08-28 14:23:45.630 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2017-08-28 14:23:45.632 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-08-28 14:23:45.762 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-08-28 14:23:45.763 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2208 ms
+2017-08-28 14:23:45.978 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-08-28 14:23:45.982 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'statViewServlet' to [/druid/*]
+2017-08-28 14:23:45.986 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-08-28 14:23:45.987 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-08-28 14:23:45.987 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-08-28 14:23:45.987 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-08-28 14:23:45.987 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'webStatFilter' to urls: [/*]
+2017-08-28 14:23:46.715 [main] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} inited
+2017-08-28 14:23:47.013 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-08-28 14:23:47.039 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-08-28 14:23:47.261 [main] INFO  org.hibernate.Version -HHH000412: Hibernate Core {5.0.12.Final}
+2017-08-28 14:23:47.263 [main] INFO  org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+2017-08-28 14:23:47.265 [main] INFO  org.hibernate.cfg.Environment -HHH000021: Bytecode provider name : javassist
+2017-08-28 14:23:47.320 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-08-28 14:23:47.459 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-08-28 14:23:47.979 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-08-28 14:23:48.679 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Mon Aug 28 14:23:43 CST 2017]; root of context hierarchy
+2017-08-28 14:23:48.753 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/greeting]}" onto public com.videosplay.main.Greeting com.videosplay.main.GreetingController.greeting(java.lang.String)
+2017-08-28 14:23:48.756 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/getallinfos]}" onto public com.videosplay.main.InfosData com.videosplay.main.GreetingController.getInfos()
+2017-08-28 14:23:48.756 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/getInfos]}" onto public java.lang.String com.videosplay.main.GreetingController.getInfo()
+2017-08-28 14:23:48.759 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/confirmDeal],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.ConfirmDealResponse> com.videosplay.main.business.control.ConfirmDealController.confirmDeal(java.lang.String)
+2017-08-28 14:23:48.760 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/createDeal],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData com.videosplay.main.business.control.DealsController.createDeal(java.lang.String)
+2017-08-28 14:23:48.762 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfos],methods=[POST]}" onto public java.util.List<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.GoodsController.getGoodsInfos()
+2017-08-28 14:23:48.762 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfosPage],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsInfo>> com.videosplay.main.business.control.GoodsController.getGoodsInfosByPage(java.lang.String)
+2017-08-28 14:23:48.763 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsinfosSort],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsInfo>> com.videosplay.main.business.control.GoodsController.getGoodsInfosBySort(java.lang.String)
+2017-08-28 14:23:48.764 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsDetailInfo],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.GoodsController.getGoodsDetailInfo(java.lang.String)
+2017-08-28 14:23:48.765 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsComments],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsComments>> com.videosplay.main.business.control.GoodsController.getGoodsComments(java.lang.String)
+2017-08-28 14:23:48.766 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodssort],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.GoodsSortList>> com.videosplay.main.business.control.GoodsSortController.getGoodsSortInfos()
+2017-08-28 14:23:48.767 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/mainlist],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.MainResponse> com.videosplay.main.business.control.MainPageController.showMainPage()
+2017-08-28 14:23:48.768 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/goodsMarketShop],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.MarketShopResponse> com.videosplay.main.business.control.MarketShopController.getMarketShopList(java.lang.String)
+2017-08-28 14:23:48.770 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videosinfos],methods=[POST]}" onto public java.util.List<com.videosplay.main.business.model.GoodsInfo> com.videosplay.main.business.control.VideosController.getvideosInfos()
+2017-08-28 14:23:48.770 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videosinfosPage],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<java.util.List<com.videosplay.main.business.model.Video>> com.videosplay.main.business.control.VideosController.getVideosInfosByPage(java.lang.String)
+2017-08-28 14:23:48.770 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videoDetailInfo],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.business.model.Video> com.videosplay.main.business.control.VideosController.getVideoDetailInfo(java.lang.String)
+2017-08-28 14:23:48.772 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/api/videoplaycount],methods=[POST]}" onto public void com.videosplay.main.business.control.VideosController.updateVideoPlayCount(java.lang.String)
+2017-08-28 14:23:48.777 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/add],methods=[GET]}" onto public java.lang.String com.videosplay.main.test.business.CustomerController.addNewUser(java.lang.String,java.lang.String,int)
+2017-08-28 14:23:48.778 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/all],methods=[GET]}" onto public com.videosplay.main.test.business.ResonseData com.videosplay.main.test.business.CustomerController.getAllUsers()
+2017-08-28 14:23:48.778 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update],methods=[POST],consumes=[application/json]}" onto public boolean com.videosplay.main.test.business.CustomerController.updateCustomer(int)
+2017-08-28 14:23:48.779 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update11],methods=[POST]}" onto public com.videosplay.main.test.business.ResonseData<com.videosplay.main.test.business.UserTest> com.videosplay.main.test.business.CustomerController.updateCustomerByJson(java.lang.String)
+2017-08-28 14:23:48.779 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/customer/update22],methods=[POST]}" onto public boolean com.videosplay.main.test.business.CustomerController.updateCustomerByJsonFormData(int,java.lang.String,java.lang.String)
+2017-08-28 14:23:48.782 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-08-28 14:23:48.782 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-08-28 14:23:48.812 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-28 14:23:48.812 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-28 14:23:48.851 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-08-28 14:23:49.057 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-08-28 14:23:49.060 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'statFilter' has been autodetected for JMX exposure
+2017-08-28 14:23:49.060 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-08-28 14:23:49.068 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2017-08-28 14:23:49.069 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2017-08-28 14:23:49.078 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor -No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-08-28 14:23:49.132 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2017-08-28 14:23:49.138 [main] INFO  com.videosplay.main.Application -Started Application in 6.125 seconds (JVM running for 6.813)
+2017-08-28 14:28:39.440 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-08-28 14:28:39.441 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-08-28 14:28:39.460 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2017-08-28 14:28:39.592 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2)
+2017-08-28 14:28:43.611 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2)
+2017-08-28 14:28:48.355 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 2
+2017-08-28 14:28:55.972 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2)
+2017-08-28 14:28:55.975 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2)
+2017-08-28 14:29:01.042 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2)
+2017-08-28 14:29:14.924 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 2
+2017-08-28 14:29:21.551 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2)
+2017-08-28 14:29:21.561 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2)
+2017-08-28 14:29:30.047 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 3
+2017-08-28 14:29:36.426 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3)
+2017-08-28 14:29:36.430 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3)
+2017-08-28 14:29:45.262 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 14:29:49.573 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:29:49.581 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:29:51.285 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:29:52.083 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:29:53.326 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:29:53.330 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:30:12.917 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:30:14.932 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:30:16.363 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:30:16.364 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:30:18.031 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:30:18.733 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:30:19.621 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:30:20.507 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:30:21.722 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:30:21.723 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:30:46.589 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:30:49.264 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:30:50.099 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:30:51.274 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:30:51.275 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:30:53.870 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:31:45.437 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 14:31:46.708 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:31:46.717 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:31:58.716 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:31:58.717 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:33:38.140 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 14:33:40.834 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:33:40.842 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:33:43.412 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:33:43.414 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:34:19.707 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:34:27.547 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:34:27.548 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:36:33.792 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:36:35.309 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:36:36.116 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:36:37.698 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:36:37.699 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:36:45.692 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:37:03.809 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:37:03.811 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:37:17.084 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:37:19.121 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:37:19.123 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:37:32.852 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:37:37.615 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 14:37:39.318 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:37:39.323 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:37:46.242 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:37:47.334 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:37:51.064 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:38:00.198 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:38:12.600 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:38:13.848 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:38:28.709 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:38:28.711 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:43:01.602 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:43:03.755 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:43:03.756 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:43:16.340 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:43:17.837 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:43:17.839 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:43:48.101 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:44:37.498 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 14:44:39.052 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:44:39.060 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:44:41.139 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:44:41.140 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:46:48.069 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:46:48.880 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:46:48.881 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:49:40.304 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 14:49:49.502 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 14:49:49.502 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 14:49:55.844 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 14:49:58.164 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1) group by transfer_id  having count(transfer_id) > 0)
+2017-08-28 14:49:58.165 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 14:50:01.805 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 14:50:05.235 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 2
+2017-08-28 14:50:09.728 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-08-28 14:50:09.731 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-08-28 14:50:11.257 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1,2) group by transfer_id  having count(transfer_id) > 1)
+2017-08-28 14:50:11.258 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-08-28 14:50:15.706 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-08-28 14:50:21.760 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-08-28 14:50:21.762 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-08-28 14:50:24.146 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-08-28 14:50:25.359 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1,2) group by transfer_id  having count(transfer_id) > 1)
+2017-08-28 14:50:25.360 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-08-28 14:50:58.889 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-08-28 14:51:03.629 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 3
+2017-08-28 14:51:07.813 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2,3)
+2017-08-28 14:51:07.815 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2,3)
+2017-08-28 14:51:09.529 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2,3)
+2017-08-28 14:51:10.572 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1,2,3) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:51:10.572 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2,3)
+2017-08-28 14:51:13.222 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2,3)
+2017-08-28 14:52:16.182 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 14:52:18.025 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:52:18.034 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:52:20.705 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:52:21.756 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:52:23.038 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (2,3,1) group by transfer_id  having count(transfer_id) > 2)
+2017-08-28 14:52:23.039 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:52:27.603 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (2,3,1)
+2017-08-28 14:52:54.653 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 14:53:00.104 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 14:53:00.114 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 14:53:03.185 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 14:53:04.012 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1) group by transfer_id  having count(transfer_id) > 0)
+2017-08-28 14:53:04.012 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 14:53:57.730 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 14:54:05.894 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 3
+2017-08-28 14:54:14.918 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 14:54:16.396 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3)
+2017-08-28 14:54:16.399 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3)
+2017-08-28 14:54:17.882 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3)
+2017-08-28 14:54:18.904 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1,3) group by transfer_id  having count(transfer_id) > 1)
+2017-08-28 14:54:18.905 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3)
+2017-08-28 14:56:52.278 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 14:56:53.987 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3)
+2017-08-28 14:56:54.015 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3)
+2017-08-28 14:56:55.724 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1,3) group by transfer_id  having count(transfer_id) > 1)
+2017-08-28 14:56:55.724 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3)
+2017-08-28 14:57:46.550 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 14:57:48.456 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3)
+2017-08-28 14:57:48.466 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3)
+2017-08-28 14:57:49.981 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1,3) group by transfer_id  having count(transfer_id) > 1)
+2017-08-28 14:57:49.982 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3)
+2017-08-28 14:58:34.687 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3)
+2017-08-28 14:58:38.798 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 3
+2017-08-28 14:58:44.691 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 4
+2017-08-28 14:58:49.858 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 5
+2017-08-28 14:58:55.159 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 5
+2017-08-28 14:58:57.263 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 6
+2017-08-28 14:58:58.425 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3,4,5)
+2017-08-28 14:58:58.438 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3,4,5)
+2017-08-28 14:59:01.754 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3,4,5)
+2017-08-28 14:59:02.553 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3,4,5)
+2017-08-28 14:59:09.061 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3,4,5,6)
+2017-08-28 14:59:09.061 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3,4,5,6)
+2017-08-28 14:59:11.201 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3,4,5,6)
+2017-08-28 14:59:12.284 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1,3,4,5,6) group by transfer_id  having count(transfer_id) > 4)
+2017-08-28 14:59:12.285 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3,4,5,6)
+2017-08-28 14:59:24.502 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3,4,5,6)
+2017-08-28 14:59:28.659 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3,4,5,6)
+2017-08-28 14:59:29.383 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3,4,5,6)
+2017-08-28 14:59:29.925 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3,4,5,6)
+2017-08-28 14:59:30.920 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3,4,5,6)
+2017-08-28 14:59:32.569 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1,3,4,5,6) group by transfer_id  having count(transfer_id) > 4)
+2017-08-28 14:59:32.570 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3,4,5,6)
+2017-08-28 14:59:37.502 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,3,4,5,6)
+2017-08-28 15:03:26.736 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 15:03:34.317 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:03:34.320 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:03:36.595 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:03:37.584 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1) group by transfer_id  having count(transfer_id) > 0)
+2017-08-28 15:03:37.585 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:04:39.795 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 15:04:42.147 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:04:42.154 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:04:43.751 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1) group by transfer_id  having count(transfer_id) > 0)
+2017-08-28 15:04:43.752 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:06:50.825 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 15:06:55.434 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:06:55.440 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:06:57.108 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1) group by transfer_id  having count(transfer_id) > 0)
+2017-08-28 15:06:57.111 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:07:00.852 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:09:11.102 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 15:09:13.229 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:09:13.233 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:09:14.388 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1) group by transfer_id  having count(transfer_id) > 0)
+2017-08-28 15:09:14.389 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:16:57.812 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 15:16:59.315 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:16:59.328 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:17:00.588 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1) group by transfer_id  having count(transfer_id) > 0)
+2017-08-28 15:17:00.588 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:17:44.243 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-08-28 15:17:45.625 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:17:45.661 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)
+2017-08-28 15:17:47.246 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1) group by transfer_id  having count(transfer_id) > 0)
+2017-08-28 15:17:47.247 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1)

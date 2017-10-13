@@ -136,7 +136,6 @@ INSERT INTO `goods_sort` (`sort_name`, `sort_type`, `sort_parent_type`, `sort_en
 ('性感内裤', 205, '7', '', 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502466439&di=50010dbcc9cb973a880572f711de04ff&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.gomein.net.cn%2Fimage%2Fbbcimg%2Fproduction_image%2Fnimg%2F201509%2F28%2F19%2F35%2F39821137640410912be_360.jpg', '描述信息');
 
 
-
 DROP TABLE if EXISTS `goods_info`;
 CREATE TABLE IF NOT EXISTS `goods_info` (
 	`goods_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,

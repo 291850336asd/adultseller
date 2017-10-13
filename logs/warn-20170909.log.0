@@ -1,0 +1,42 @@
+2017-09-09 11:17:12.144 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 11:17:22.729 [http-nio-8080-exec-1] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 11:30:37.741 [http-nio-8080-exec-4] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 11:30:37.827 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 11:30:56.573 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 11:31:28.105 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.fangInfoget(java.lang.String)
+2017-09-09 11:31:39.777 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.fangInfoget(java.lang.String)
+2017-09-09 11:31:57.912 [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.fangInfoget(java.lang.String)
+2017-09-09 11:32:46.636 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.fangInfoget(java.lang.String)
+2017-09-09 11:32:52.692 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.fangInfoget(java.lang.String)
+2017-09-09 11:33:13.168 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.fangInfoget(java.lang.String)
+2017-09-09 11:34:01.028 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.fangInfoget(java.lang.String)
+2017-09-09 11:38:22.929 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.fangInfoget(java.lang.String)
+2017-09-09 11:38:27.993 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.fangInfoget(java.lang.String)
+2017-09-09 11:39:06.674 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 11:39:10.965 [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.fangInfoget(java.lang.String)
+2017-09-09 11:39:40.703 [http-nio-8080-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.fangInfoget(java.lang.String)
+2017-09-09 11:39:55.809 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -2222222222
+2017-09-09 11:40:36.574 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -2222222222
+2017-09-09 11:40:38.877 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -2222222222
+2017-09-09 11:40:53.525 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -2222222222
+2017-09-09 11:41:14.230 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 11:41:32.038 [http-nio-8080-exec-10] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 11:42:03.673 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 11:43:00.005 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 11:43:27.578 [http-nio-8080-exec-10] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 11:43:45.163 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -2222222222
+2017-09-09 11:46:05.056 [http-nio-8080-exec-9] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 12:56:55.574 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -2222222222
+2017-09-09 12:57:06.111 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.infoget(java.lang.String)
+2017-09-09 12:57:42.149 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.infoget(java.lang.String)
+2017-09-09 12:58:57.309 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.infoget(java.lang.String)
+2017-09-09 13:00:03.053 [http-nio-8080-exec-3] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 13:00:52.817 [http-nio-8080-exec-5] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 13:00:53.144 [http-nio-8080-exec-6] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 13:00:56.611 [http-nio-8080-exec-7] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 13:09:31.222 [http-nio-8080-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.fangInfo(java.lang.String)
+2017-09-09 14:05:44.678 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -2222222222
+2017-09-09 14:14:17.126 [http-nio-8080-exec-8] WARN  o.s.web.servlet.PageNotFound -Request method 'GET' not supported
+2017-09-09 14:32:22.085 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.fangInfo(java.lang.String)
+2017-09-09 14:37:00.636 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.fangInfo(java.lang.String)
+2017-09-09 14:40:37.924 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.videosplay.main.GreetingController.fangInfo(java.lang.String)

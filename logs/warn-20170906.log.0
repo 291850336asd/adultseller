@@ -1,0 +1,3 @@
+2017-09-06 10:18:04.899 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-09-06 10:19:25.469 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-09-06 11:37:42.417 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1

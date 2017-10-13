@@ -1,0 +1,5 @@
+2017-09-01 17:28:13.984 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e0dec4a: startup date [Wed Aug 30 16:13:49 CST 2017]; root of context hierarchy
+2017-09-01 17:28:13.987 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2017-09-01 17:28:13.988 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans
+2017-09-01 17:28:13.988 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-09-01 17:28:13.992 [Thread-3] INFO  c.alibaba.druid.pool.DruidDataSource -{dataSource-1} closed

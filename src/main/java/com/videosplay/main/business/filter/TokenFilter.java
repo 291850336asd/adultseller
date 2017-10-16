@@ -17,8 +17,8 @@ import java.io.UnsupportedEncodingException;
 /**
  * Created by sunmeng on 17/9/14.
  */
-@Component
-@WebFilter(urlPatterns = "/*")
+//@Component
+//@WebFilter(urlPatterns = "/*")
 public class TokenFilter implements Filter {
 
     @Override

@@ -44,7 +44,8 @@ INSERT INTO `videos` (`video_title`, `video_img`, `video_mp4_url`, `video_descri
 ('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://flv2.bn.netease.com/videolib3/1611/24/BCcfR1400/HD/BCcfR1400-mobile.mp4','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀'),
 ('国家化妆品高级配方师','http://vimg2.ws.126.net/image/snapshot/2016/11/7/A/VC5O5977A.jpg','http://flv2.bn.netease.com/videolib3/1611/24/BCcfR1400/HD/BCcfR1400-mobile.mp4','个人化妆品见解，，打击三无，国家化妆品高级配方师。告诉你各种美容护肤小窍门、皮肤保养秘诀');
 
-
+#user type 0超级管理员
+#login_type 1qq 2微信 3手机
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
 	`user_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
@@ -52,6 +53,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 	`user_phone` varchar(20) NOT NULL DEFAULT '',
 	`user_password` varchar(20),
 	`user_type` mediumint(8) NOT NULL DEFAULT 10,
+	`login_type` MEDIUMINT(8) NOT NULL DEFAULT 0,
 	PRIMARY KEY (`user_id`)
 ) DEFAULT CHARSET=utf8;
 INSERT INTO `user` (`user_nickname`, `user_phone`, `user_password`, `user_type`) VALUES

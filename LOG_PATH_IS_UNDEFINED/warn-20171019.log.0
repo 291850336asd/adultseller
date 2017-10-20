@@ -1,0 +1,18 @@
+2017-10-19 14:23:25.684 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -2222222222
+2017-10-19 14:50:53.809 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-10-19 14:51:04.084 [http-nio-8080-exec-10] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 2
+2017-10-19 14:51:09.003 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-10-19 14:51:09.003 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-10-19 14:51:10.633 [http-nio-8080-exec-4] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-10-19 14:51:13.404 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_transfer where transfer_id in (select transfer_id from goods_transfer_service where goods_id in (1,2) group by transfer_id  having count(transfer_id) > 1)
+2017-10-19 14:51:13.411 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-10-19 14:56:46.338 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-10-19 16:53:17.425 [http-nio-8080-exec-5] WARN  com.videosplay.main.Application -select * from goods_info where goods_id = 1
+2017-10-19 16:53:18.642 [http-nio-8080-exec-8] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-10-19 16:53:18.643 [http-nio-8080-exec-1] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-10-19 16:56:28.938 [http-nio-8080-exec-2] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-10-19 17:01:35.644 [http-nio-8080-exec-7] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-10-19 17:06:07.692 [http-nio-8080-exec-9] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-10-19 17:07:21.867 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.videosplay.main.test.business.ResonseData com.videosplay.main.business.control.DealsController.getDealDetailInfo(java.lang.String)
+2017-10-19 17:10:58.119 [http-nio-8080-exec-3] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)
+2017-10-19 17:24:16.269 [http-nio-8080-exec-6] WARN  com.videosplay.main.Application -select * from goods_info where goods_id in (1,2)

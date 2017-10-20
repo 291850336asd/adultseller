@@ -5,7 +5,7 @@ package com.videosplay.main.test.business;
  */
 public class ResonseData<T> {
 
-    private int code = 404;
+    private int code = -1;
     private String message;
     private T data;
 

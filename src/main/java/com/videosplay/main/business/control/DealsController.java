@@ -3,6 +3,7 @@ package com.videosplay.main.business.control;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.videosplay.main.business.model.*;
+import com.videosplay.main.business.model.deal.DealInfo;
 import com.videosplay.main.business.utils.LogUtils;
 import com.videosplay.main.test.business.RequestData;
 import com.videosplay.main.test.business.ResonseData;
@@ -92,6 +93,34 @@ public class DealsController {
         return  resonseData;
     }
 
+
+
+
+    @CrossOrigin
+    @PostMapping("/getAllDeals")
+    @Transactional
+    public ResonseData getAllDetails(@RequestBody String request){
+        ResonseData  resonseData = new ResonseData();
+        RowMapper<DealInfo> personMapper = new BeanPropertyRowMapper<DealInfo>(DealInfo.class);
+        String queryStr = "select deal_time, pay_type, deliver_state, deal_state from deals where device = 'adultseller_android7616696656247'";
+        List<DealInfo> allInfos = jdbcTemplate.query(queryStr, personMapper);
+        resonseData.setData(allInfos);
+        resonseData.setCode(200);
+        return  resonseData;
+    }
+
+    @CrossOrigin
+    @PostMapping("/getDetails")
+    @Transactional
+    public ResonseData getDealDetailInfo(@RequestBody String request){
+        ResonseData  resonseData = new ResonseData();
+        RowMapper<DealInfo> personMapper = new BeanPropertyRowMapper<DealInfo>(DealInfo.class);
+        String queryStr = "select deal_time, pay_type, deliver_state, deal_state from deals where deal_id = '2'";
+        DealInfo info = jdbcTemplate.queryForObject(queryStr, personMapper);
+        resonseData.setData(info);
+        resonseData.setCode(200);
+        return  resonseData;
+    }
 
     private void println(String str){
         System.out.println(str);
